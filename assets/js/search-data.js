@@ -461,6 +461,16 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-mixed-traffic",
+          title: 'Mixed Traffic',
+          description: "another project with an image 🎉",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/Mixed%20Traffic/";
+            },},{id: "projects-urban-air-mobility",
+          title: 'Urban Air Mobility',
+          description: "another project with an image 🎉",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/Urban%20Air%20Mobility/";
             },},{
         id: 'social-email',
         title: 'email',
