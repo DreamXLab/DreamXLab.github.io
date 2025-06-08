@@ -4,12 +4,12 @@
 
 title: Shuai Li # the website title (if blank, full name will be used instead)
 first_name: Shuai
-middle_name: 
+middle_name:
 last_name: Li
 contact_note: >
-description: 
+description:
 footer_text: >
-  All rights reserved; 
+  All rights reserved;
 
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
