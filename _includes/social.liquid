@@ -1,3 +1,12 @@
+<style>
+  /* shrink all social icons in this file */
+  .social-icons i {
+    font-size: 0.75em;  /* adjust as needed */
+    line-height: 1;
+  }
+</style>
+
+<div class="social-icons">
 {% for social in site.data.socials %}
   {% case social[0] %}
     {% when 'acm_id' %}
@@ -69,7 +78,7 @@
     {% when 'strava_userid' %}
       <a href="https://www.strava.com/athletes/{{ social[1] }}" title="Strava"><i class="fa-brands fa-strava"></i></a>
     {% when 'telegram_username' %}
-      <a href="https://telegram.me/{{ social[1] }}" title="telegram"><i class="fa-brands fa-telegram"></i></a>
+      <a href="https://telegram.me/{{ social[1] }}" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
     {% when 'unsplash_id' %}
       <a href="https://unsplash.com/@{{ social[1] }}" title="Unsplash"><i class="fa-brands fa-unsplash"></i></a>
     {% when 'wechat_qr' %}
@@ -79,7 +88,7 @@
       </div>
       <script defer src="{{ '/assets/js/wechat.js' | relative_url | bust_file_cache }}" type="text/javascript"></script>
     {% when 'whatsapp_number' %}
-      <a href="https://wa.me/{{ social[1] }}" title="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://wa.me/{{ social[1] }}" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
     {% when 'wikidata_id' %}
       <a href="https://www.wikidata.org/wiki/{{ social[1] }}" title="Wikidata"><i class="fa-solid fa-barcode"></i></a>
     {% when 'wikipedia_id' %}
@@ -108,3 +117,4 @@
       </a>
   {% endcase %}
 {% endfor %}
+</div>

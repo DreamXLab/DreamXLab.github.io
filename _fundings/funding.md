@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /funding/
+permalink: /fundings/funding
 title: funding
 nav: true
 nav_order: 0
