@@ -9,15 +9,8 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-funding",
-          title: "funding",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/funding/";
-          },
-        },{id: "nav-projects",
-          title: "projects",
+  },{id: "nav-dreamx-lab",
+          title: "DreamX Lab",
           description: "A growing collection of your cool projects.",
           section: "Navigation",
           handler: () => {
@@ -400,11 +393,21 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "books-the-godfather",
+      },{id: "awards-awards-amp-honors",
+          title: 'AWARDS &amp;amp; HONORS',
+          description: "",
+          section: "Awards",handler: () => {
+              window.location.href = "/awards/award";
+            },},{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
+            },},{id: "fundings-funding",
+          title: 'funding',
+          description: "",
+          section: "Fundings",handler: () => {
+              window.location.href = "/fundings/funding";
             },},{id: "news-a-simple-inline-announcement",
           title: 'A simple inline announcement.',
           description: "",
@@ -476,35 +479,21 @@ ninja.data = [{
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%79%6F%75@%65%78%61%6D%70%6C%65.%63%6F%6D", "_blank");
+          window.open("mailto:%73%68%75%61%69.%6C%69@%65%73%73%69%65.%75%66%6C.%65%64%75", "_blank");
         },
       },{
-        id: 'social-inspire',
-        title: 'Inspire HEP',
+        id: 'social-linkedin',
+        title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
-          window.open("https://inspirehep.net/authors/1010907", "_blank");
-        },
-      },{
-        id: 'social-rss',
-        title: 'RSS Feed',
-        section: 'Socials',
-        handler: () => {
-          window.open("/feed.xml", "_blank");
+          window.open("https://www.linkedin.com/in/shuai-li-02359762", "_blank");
         },
       },{
         id: 'social-scholar',
         title: 'Google Scholar',
         section: 'Socials',
         handler: () => {
-          window.open("https://scholar.google.com/citations?user=qc6CJjYAAAAJ", "_blank");
-        },
-      },{
-        id: 'social-custom_social',
-        title: 'Custom_social',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.alberteinstein.com/", "_blank");
+          window.open("https://scholar.google.com/citations?user=xeoJ8Y8AAAAJ", "_blank");
         },
       },{
       id: 'light-theme',
