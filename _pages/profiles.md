@@ -22,4 +22,8 @@ profiles:
     image: shunyu_pic.jpg
     content: about_shunyu.md
     image_circular: false # crops the image to make it circular
+  - align: left
+    image: Mengjun_pic.jpg
+    content: about_mengjun.md
+    image_circular: false # crops the image to make it circular
 ---
