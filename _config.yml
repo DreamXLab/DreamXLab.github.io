@@ -148,6 +148,10 @@ collections:
     output: true
   projects:
     output: true
+  fundings:
+    output: true
+  awards:
+    output: true
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
