@@ -10,7 +10,9 @@ horizontal: false
 ---
 
 <!-- pages/projects.md -->
+
 DREAM X LAB conducts research in Digital Twins, Robotics, and Environment/Energy/Ecosystems—empowered by AI—to advance humanity and society through new paradigms of manufacturing, mobility, and management.
+
 <div class="projects">
 {% if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
