@@ -150,8 +150,10 @@ collections:
     output: true
   fundings:
     output: true
+    permalink: /fundings/:path/
   awards:
     output: true
+    permalink: /awards/:path/
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
