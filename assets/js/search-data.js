@@ -403,8 +403,8 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "fundings-funding",
-          title: 'funding',
+            },},{id: "fundings-funded-projects",
+          title: 'Funded Projects',
           description: "",
           section: "Fundings",handler: () => {
               window.location.href = "/fundings/funding";
