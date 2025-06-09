@@ -179,7 +179,7 @@ We gratefully acknowledge the generous support from our sponsors and collaborato
 
 {% assign all_cats = records | map: "categories" | flatten | uniq | sort %}
 
-  {% assign all_cats = page.funding | map: "categories" | flatten | uniq | sort %}
+{% assign all_cats = page.funding | map: "categories" | flatten | uniq | sort %}
 
 <div class="tag-category-list">
   <ul>
