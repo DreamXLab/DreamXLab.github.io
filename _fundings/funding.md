@@ -158,66 +158,107 @@ funding:
   <h1>{{ page.title }}</h1>
 
 {% assign records = page.funding %}
+
+  <!-- 分类导航保留原样 -->
+
 {% assign all_cats = records | map: "categories" | flatten | uniq | sort %}
 
-  <!-- 分类导航 -->
   <div class="tag-category-list">
     <ul>
       <li><a href="#" data-cat="all">All</a></li>
       {% for cat in all_cats %}
-        <li>
-          <a href="#" data-cat="{{ cat | escape }}">{{ cat }}</a>
-        </li>
+        <li><a href="#" data-cat="{{ cat | escape }}">{{ cat }}</a></li>
       {% endfor %}
     </ul>
   </div>
 
-  <!-- 单个列表，li 的 data-cats 存储为 JSON -->
   <ul id="fund-list">
     {% for item in records %}
+
+      {% assign role = item.categories
+          | where_exp: "c", "c == 'PI' or c == 'Co-PI' or c == 'Senior Personnel'"
+          | first %}
+
+
+
+      {% assign funders = item.categories
+          | where_exp: "c",
+              "c != 'External Grants and Contracts'
+               and c != 'Internal Funding'
+               and c != 'PI'
+               and c != 'Co-PI'
+               and c != 'Senior Personnel'" %}
+      {% assign funder = funders | first %}
+
       <li data-cats='{{ item.categories | jsonify }}'>
-        <h3>{{ item.title }}</h3>
-        <ul>
-          <li><strong>Period:</strong> {{ item.period }}</li>
-          <li><strong>Amount:</strong> {{ item.amount }}</li>
-        </ul>
-        {% if item.note %}
-          <p><em>{{ item.note }}</em></p>
-        {% endif %}
-        <div style="height:1em"></div>
+        <div class="fund-entry" style="display:flex; align-items:flex-start; gap:1em; margin-bottom:1.5em;">
+
+          <!-- logo -->
+          <div class="fund-logo" style="flex:0 0 auto;">
+            <img
+              src="/assets/logos/{{ funder
+                  | downcase
+                  | replace: ' ', '-'
+                  | replace: ',', ''
+                  | replace: '(', ''
+                  | replace: ')', ''
+                  | replace: '.', ''
+                }}.png"
+              alt="{{ funder }} logo"
+              style="width:4em; height:auto;" />
+          </div>
+
+          <!-- 文字内容 -->
+          <div class="fund-content" style="flex:1 1 auto;">
+            <!-- ① 项目标题 -->
+            <p class="fund-title" style="margin:0 0 0.3em; font-weight:bold;">
+              “{{ item.title }}”
+            </p>
+
+            <!-- ② 时段 + 角色 -->
+            <p class="fund-period-role" style="margin:0 0.3em; color:#555;">
+              {{ item.period }}，{{ role }}
+            </p>
+
+            <!-- ③ 资助机构（简称） + ④ 金额 -->
+            <p class="fund-funder-amount" style="margin:0; color:#333;">
+              {{ funder }}
+              {% if funder contains 'National Science Foundation' %}(NSF){% endif %}
+              {% if funder contains 'Department of Energy' %}(DOE){% endif %}
+              {% if funder contains 'Office of Naval Research' %}(ONR){% endif %}
+              · {{ item.amount }}
+            </p>
+          </div>
+
+        </div>
       </li>
     {% endfor %}
+
   </ul>
 
   <script>
   document.addEventListener('DOMContentLoaded', function() {
-    // 只选 #fund-list 下的一级 <li>
     const listItems = document.querySelectorAll('#fund-list > li');
     const tagLinks  = document.querySelectorAll('.tag-category-list a');
-
     function showCat(catRaw) {
       const cat = catRaw.trim();
       listItems.forEach(el => {
         let cats = [];
         try {
-          cats = JSON.parse(el.getAttribute('data-cats'))
-                     .map(c => c.trim());
+          cats = JSON.parse(el.getAttribute('data-cats')).map(c => c.trim());
         } catch (e) {}
         const match = (cat === 'all' || cats.includes(cat));
         el.style.display = match ? 'block' : 'none';
       });
     }
-
     tagLinks.forEach(link => {
       link.addEventListener('click', e => {
         e.preventDefault();
         showCat(link.getAttribute('data-cat'));
       });
     });
-
-    // 初始状态显示所有
     showCat('all');
   });
-</script>
+  </script>
 
 </div>
