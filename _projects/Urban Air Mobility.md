@@ -1,46 +1,39 @@
 ---
 layout: page
 title: Urban Air Mobility
-description: another project with an image 🎉
-img: assets/img/6.jpg
+description: Electric vertical-takeoff and landing (eVTOL) aircraft
+img: assets/img/UAM_intro.png
 importance: 4
 category: fun
 ---
 
-Urban Air Mobility.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+Electric vertical-takeoff and landing (eVTOL) aircraft, known for their maneuverability and flexibility present a promising alternative to traditional transportation systems. However, these aircraft face significant challenges from multiple perspectives, such as increasing energy efficiency, enhancing passenger experience, and reducing noise impact on urban environments. While mathematical modeling-based approaches have been employed for flight motion planning, they often struggle to adapt to dynamic and complex environments. In this work, we introduce a three-dimensional motion planning method based on deep reinforcement learning (DRL), tailored for manned eVTOL flights through urban wind fields. Our approach considers three crucial aspects: aircraft energy consumption, passenger concerns, and noise impact on urban environment. We modify the Proximal Policy Optimization (PPO) algorithm and design comprehensive reward function that considers these objectives. By incorporating energy efficiency, passenger concerns, and noise impact into our reward function, our method demonstrates improved policy learning compared to existing approaches. Comparative experiments conducted under various wind conditions show that our method outperforms commonly used techniques, effectively optimizing multiple objectives in challenging urban environments.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/teaser.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    Multi-objective motion planning of eVTOL aircraft flight, from origin to destination,  through urban wind fields enabled by deep reinforcement learning. We consider eVTOL aircraft energy consumption and efficiency, passenger concern and noise impact on urban environment as objectives. We only study the flight phase, not takeoff and landing phase of eVTOL.
 </div>
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/wind.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    Wind sim-sim.
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/wind_firstRevise.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    City-scale wind field simulation. The left figure shows the OpenStreetMap (OSM) model of city Atlanta,  state GA, USA. The simulation environment is imported into OpenFOAM via scripting. This allows for the visualization of the environment in Paraview. In the right figure, one part of the result of wind field simulation is visualized as volumetric rendering of velocity field magnitude.
 </div>
 
 You can also put regular text between your rows of images.
