@@ -49,16 +49,6 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
-    <!-- Recent Highlights and Focus -->
-    {% if page.recent_highlights and page.recent_highlights.enabled %}
-      <section>
-        <h2>Recent Highlights and Focus</h2>
-        <div>
-          {{ page.recent_highlights.content }}
-        </div>
-      </section>
-    {% endif %}
-
     <div style="height:1em"></div>
 
     <!-- AI Explorer -->
@@ -85,6 +75,36 @@ layout: default
             </li>
           {% endfor %}
         </ul>
+      </section>
+    {% endif %}
+
+    <!-- Recent Highlights and Focus -->
+    {% if page.Deep_Tech_Entrepreneur and page.Deep_Tech_Entrepreneur.enabled %}
+      <section>
+        <h2>Deep Tech Entrepreneur</h2>
+        <div>
+          {{ page.Deep_Tech_Entrepreneur.content }}
+        </div>
+      </section>
+    {% endif %}
+
+    <div style="height:1em"></div>
+    {% if page.Engineer_and_Economic_Consultant and page.Engineer_and_Economic_Consultant.enabled %}
+      <section>
+        <h2>Engineer and Economic Consultant</h2>
+        <div>
+          {{ page.Engineer_and_Economic_Consultant.content }}
+        </div>
+      </section>
+    {% endif %}
+
+    <div style="height:1em"></div>
+    {% if page.Educator and page.Educator.enabled %}
+      <section>
+        <h2>Educator</h2>
+        <div>
+          {{ page.Educator.content }}
+        </div>
       </section>
     {% endif %}
 
