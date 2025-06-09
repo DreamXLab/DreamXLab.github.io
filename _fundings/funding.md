@@ -1,9 +1,11 @@
 ---
 layout: default
 permalink: /fundings/funding
-title: funding
+title: Funded Projects
 nav: true
-nav_order: 0
+filter_tags:
+  - "National Science Foundation"
+  - "Robotics & AI"
 funding:
   - title: "Elements: A Convergent Physics-based and Data-driven Computing Platform for Building Modeling"
     period: "09/01/2023 – 08/31/2026"
@@ -12,6 +14,7 @@ funding:
       - "External Grants and Contracts"
       - "National Science Foundation"
       - "Co-PI"
+      - "Robotics & AI"
   - title: "SCC-PG: Securing Underserved Communities from Drug Abuse with Drone-Based Smart Medication Delivery"
     period: "04/01/2023 – 03/31/2024"
     amount: "$150,000"
@@ -19,6 +22,7 @@ funding:
       - "External Grants and Contracts"
       - "National Science Foundation"
       - "Co-PI"
+      - "Robotics & AI"
   - title: "Lignin-Derived Carbon Storing Foams for High Performance Insulation"
     period: "11/01/2022 – 10/31/2024"
     amount: "$2,707,550"
@@ -33,6 +37,7 @@ funding:
       - "External Grants and Contracts"
       - "National Science Foundation"
       - "PI"
+      - "Robotics & AI"
   - title: "I-Corps: Artificial Intelligence (AI)-Enabled and Digital Twin Interactive Robots for Facility Hygiene and Human Health"
     period: "07/01/2022 – 12/31/2023"
     amount: "$49,971"
@@ -40,6 +45,7 @@ funding:
       - "External Grants and Contracts"
       - "National Science Foundation"
       - "PI"
+      - "Robotics & AI"
   - title: "STEM Education and Apprenticeship Liaison (SEAL) for Navy"
     period: "05/01/2022 – 04/30/2025"
     amount: "$600,000"
@@ -54,6 +60,7 @@ funding:
       - "PI"
       - "National Science Foundation"
       - "External Grants and Contracts"
+      - "Robotics & AI"
   - title: "CPS: Medium: Bio-socially Adaptive Control of Robotics-Augmented Building-Human Systems for Infection Prevention by Cybernation of Pathogen Transmission"
     period: "01/01/2021 – 12/31/2024"
     amount: "$1,199,129"
@@ -61,6 +68,7 @@ funding:
       - "PI"
       - "National Science Foundation"
       - "External Grants and Contracts"
+      - "Robotics & AI"
   - title: "SCC-PG: Toward Disease-Resistant School Communities by Reinventing the Interface among Built Environments, Occupants, and Microbiomes"
     period: "10/01/2020 – 4/30/2022"
     amount: "$149,998"
@@ -75,6 +83,7 @@ funding:
       - "PI"
       - "External Grants and Contracts"
       - "Tennessee Department of Transportation"
+      - "Robotics & AI"
   - title: "Smart Design and Operation of Ventilation Systems to Reduce Indoor Pathogen Transmission"
     period: "09/01/2020 – 12/31/2020"
     amount: "$9,956"
@@ -82,6 +91,7 @@ funding:
       - "PI"
       - "External Grants and Contracts"
       - "Trimble, Inc."
+      - "Robotics & AI"
   - title: "RAPID: Impacts of Design and Operation Attributes of Mass-Gathering Civil Infrastructure Systems on Pathogen Transmission and Exposure"
     period: "05/01/2020 – 8/31/2022"
     amount: "$199,809"
@@ -103,6 +113,7 @@ funding:
       - "PI"
       - "External Grants and Contracts"
       - "National Science Foundation"
+      - "Robotics & AI"
   - title: "Concrete Bridge Deck Deterioration Assessment Using Ground Penetrating Radar"
     period: "01/17/2019 – 5/31/2021"
     amount: "$149,681"
@@ -117,6 +128,7 @@ funding:
       - "Co-PI"
       - "University of Tennessee Knoxville"
       - "Internal Funding"
+      - "Robotics & AI"
   - title: "Feasibility of Personalized Monitoring of Environmental Exposomes toward Prevention of Alzheimer’s Disease and Related Dementia"
     period: "01/01/2021 – 8/31/2021"
     amount: "$5,000"
@@ -131,6 +143,7 @@ funding:
       - "PI"
       - "University of Tennessee Oak Ridge Innovation Institute"
       - "Internal Funding"
+      - "Robotics & AI"
   - title: "Pathogen Transmission Pathway Identification by Fomite and Behavior Monitoring"
     period: "08/01/2020 – 07/31/2022"
     amount: "$47,000"
@@ -138,6 +151,7 @@ funding:
       - "Co-PI"
       - "University of Tennessee"
       - "Internal Funding"
+      - "Robotics & AI"
   - title: "Trust-Aware Human-Robot Interface for Occluded and Uncertain Space Search"
     period: "05/01/2019 – 6/30/2020"
     amount: "$69,962"
@@ -145,6 +159,7 @@ funding:
       - "PI"
       - "University of Tennessee Knoxville"
       - "Internal Funding"
+      - "Robotics & AI"
   - title: "Visibility Enhancement for Autonomous Construction Machines Based on Prediction"
     period: "01/10/2018 – 05/08/2018"
     amount: "$2,000"
@@ -152,6 +167,7 @@ funding:
       - "PI"
       - "University of Tennessee Knoxville"
       - "Internal Funding"
+      - "Robotics & AI"
 ---
 
 <div class="post">
@@ -159,18 +175,24 @@ funding:
 
 {% assign records = page.funding %}
 
-  <!-- 分类导航保留原样 -->
+We gratefully acknowledge the generous support from our sponsors and collaborators. We are excited about opportunities for research collaborations, joint proposal development, and strategic partnerships that advance scientific discovery, foster innovation, and create meaningful societal impact.
 
 {% assign all_cats = records | map: "categories" | flatten | uniq | sort %}
 
-  <div class="tag-category-list">
-    <ul>
-      <li><a href="#" data-cat="all">All</a></li>
-      {% for cat in all_cats %}
-        <li><a href="#" data-cat="{{ cat | escape }}">{{ cat }}</a></li>
-      {% endfor %}
-    </ul>
-  </div>
+  {% assign all_cats = page.funding | map: "categories" | flatten | uniq | sort %}
+
+<div class="tag-category-list">
+  <ul>
+    <li><a href="#" data-cat="all">All</a></li>
+    {% for tag in page.filter_tags %}
+      {% if all_cats contains tag %}
+        <li>
+          <a href="#" data-cat="{{ tag | escape }}">{{ tag }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
 
   <ul id="fund-list">
     {% for item in records %}
@@ -208,19 +230,15 @@ funding:
               style="width:4em; height:auto;" />
           </div>
 
-          <!-- 文字内容 -->
           <div class="fund-content" style="flex:1 1 auto;">
-            <!-- ① 项目标题 -->
             <p class="fund-title" style="margin:0 0 0.3em; font-weight:bold;">
               “{{ item.title }}”
             </p>
 
-            <!-- ② 时段 + 角色 -->
             <p class="fund-period-role" style="margin:0 0.3em; color:#555;">
               {{ item.period }}，{{ role }}
             </p>
 
-            <!-- ③ 资助机构（简称） + ④ 金额 -->
             <p class="fund-funder-amount" style="margin:0; color:#333;">
               {{ funder }}
               {% if funder contains 'National Science Foundation' %}(NSF){% endif %}
