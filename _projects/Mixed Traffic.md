@@ -2,7 +2,7 @@
 layout: page
 title: Mixed Traffic
 description: another project with an image 🎉
-img: assets/img/6.jpg
+img: assets/img/Mixed_traffic_intro.png
 importance: 4
 category: fun
 ---
