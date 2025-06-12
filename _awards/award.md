@@ -108,16 +108,17 @@ awards:
 
 <div class="container">
 
-  {% for award in page.awards %}
-    <div class="award">
-      <div class="award-header">
-        <div class="award-title">{{ award.title }}</div>
-        <div class="award-institution">{{ award.institution }}</div>
-        <div class="award-year">{{ award.year }}</div>
-      </div>
-      <p class="award-description">{{ award.description }}</p>
-      {% raw %}<hr>{% endraw %}
-    </div>
-    
-  {% endfor %}
+{% for award in page.awards %}
+<div class="award">
+<div class="award-header">
+<div class="award-title">{{ award.title }}</div>
+<div class="award-institution">{{ award.institution }}</div>
+<div class="award-year">{{ award.year }}</div>
+</div>
+<p class="award-description">{{ award.description }}</p>
+{% raw %}<hr>{% endraw %}
+</div>
+
+{% endfor %}
+
 </div>
