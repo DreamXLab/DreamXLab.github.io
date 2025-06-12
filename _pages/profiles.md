@@ -7,7 +7,7 @@ nav: true
 nav_order: 7
 
 profiles:
-  - image: /assets/img/prof_pic.jpg
+  - image: /assets/img/prof_pic.png
     image_circular: false
     url: https://dreamxlab.github.io/
     role: pi
