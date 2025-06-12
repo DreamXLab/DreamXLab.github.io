@@ -17,7 +17,11 @@ nav_order: 6
 </style>
 
 <div class="opportunity-page">
-
+  <p>
+  Contact us at <a href="mailto:dreamxlab@outlook.com">dreamxlab@outlook.com</a>.<br>
+  Please use the following email subject format:<br>
+  <strong>[Postdoc/PhD/Master/Undergrad] + [Your Name] + [Year] + [Fall/Spring/Summer]</strong>
+</p>
   <p>
     We are recruiting top students and researchers who are deeply motivated to pursue impactful research, think independently while contributing as team players, plan strategically and work diligently to take initiative and translate ideas into real-world outcomes, and who possess the grit and vision to become future leaders in academia, industry, and entrepreneurship. We welcome not only those who are already exceptional, but also those with the potential and determination to grow into excellence. If you believe you are a strong fit, have taken the time to understand our lab’s research focus through our website, past projects, or publications, and have carefully reviewed the relevant information below based on your applicant status, please email us to inquire about available opportunities.
   </p>

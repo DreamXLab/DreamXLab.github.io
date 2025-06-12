@@ -2,10 +2,10 @@
 layout: page
 title: DreamX Lab
 permalink: /projects/
-description: A growing collection of your cool projects.
+description:
 nav: true
 nav_order: 3
-display_categories: [Manufacturing, Mobility, Managamentwork, fun]
+display_categories: [Manufacturing, Mobility, Management]
 horizontal: false
 ---
 

@@ -4,7 +4,7 @@ title: Mixed Traffic
 description: another project with an image 🎉
 img: assets/img/Mixed_traffic_intro.png
 importance: 4
-category: fun
+category: Mobility
 ---
 
 Mixed Traffic.

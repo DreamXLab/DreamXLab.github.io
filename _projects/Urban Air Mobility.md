@@ -4,7 +4,7 @@ title: Urban Air Mobility
 description: Electric vertical-takeoff and landing (eVTOL) aircraft
 img: assets/img/UAM_intro.png
 importance: 4
-category: fun
+category: Mobility
 ---
 
 Electric vertical-takeoff and landing (eVTOL) aircraft, known for their maneuverability and flexibility present a promising alternative to traditional transportation systems. However, these aircraft face significant challenges from multiple perspectives, such as increasing energy efficiency, enhancing passenger experience, and reducing noise impact on urban environments. While mathematical modeling-based approaches have been employed for flight motion planning, they often struggle to adapt to dynamic and complex environments. In this work, we introduce a three-dimensional motion planning method based on deep reinforcement learning (DRL), tailored for manned eVTOL flights through urban wind fields. Our approach considers three crucial aspects: aircraft energy consumption, passenger concerns, and noise impact on urban environment. We modify the Proximal Policy Optimization (PPO) algorithm and design comprehensive reward function that considers these objectives. By incorporating energy efficiency, passenger concerns, and noise impact into our reward function, our method demonstrates improved policy learning compared to existing approaches. Comparative experiments conducted under various wind conditions show that our method outperforms commonly used techniques, effectively optimizing multiple objectives in challenging urban environments.
