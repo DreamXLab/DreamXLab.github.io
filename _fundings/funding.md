@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 permalink: /fundings/funding
 title: Funded Projects
 nav: true
@@ -171,7 +171,6 @@ funding:
 ---
 
 <div class="post">
-  <h1>{{ page.title }}</h1>
 
 {% assign records = page.funding %}
 
@@ -193,6 +192,7 @@ We gratefully acknowledge the generous support from our sponsors and collaborato
     {% endfor %}
   </ul>
 </div>
+    <div style="height:2em"></div>
 
   <ul id="fund-list">
     {% for item in records %}
@@ -246,10 +246,12 @@ We gratefully acknowledge the generous support from our sponsors and collaborato
               {% if funder contains 'Office of Naval Research' %}(ONR){% endif %}
               · {{ item.amount }}
             </p>
+          
           </div>
 
         </div>
       </li>
+       {% raw %}<hr>{% endraw %}
     {% endfor %}
 
   </ul>

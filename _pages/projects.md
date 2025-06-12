@@ -5,13 +5,13 @@ permalink: /projects/
 description: A growing collection of your cool projects.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: [Manufacturing, Mobility, Managamentwork, fun]
 horizontal: false
 ---
 
 <!-- pages/projects.md -->
 
-DREAM X LAB conducts research in Digital Twins, Robotics, and Environment/Energy/Ecosystems—empowered by AI—to advance humanity and society through new paradigms of manufacturing, mobility, and management.
+DREAM X LAB conducts research in **D**igital **T**wins, **R**obotics, and **E**nvironment/**E**nergy/**E**cosystems—empowered by **A**I—to advance humanity and society through new paradigms of manufacturing, mobility, and management.
 
 <div class="projects">
 {% if site.enable_project_categories and page.display_categories %}
