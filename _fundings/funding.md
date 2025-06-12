@@ -246,7 +246,7 @@ We gratefully acknowledge the generous support from our sponsors and collaborato
               {% if funder contains 'Office of Naval Research' %}(ONR){% endif %}
               · {{ item.amount }}
             </p>
-          
+
           </div>
 
         </div>

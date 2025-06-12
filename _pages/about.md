@@ -48,7 +48,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a tenured Associate Professor at the University of Florida and the Director of the DreamX Lab, where I lead research in AI, robotics, and data science. Prior to joining UF, I held the David Goodpasture Endowed faculty position in the Department of Civil and Environmental Engineering at the University of Tennessee Knoxville, with a joint appointment in the Department of Mechanical, Aerospace, and Biomedical Engineering. During my time there, I was promoted from Assistant Professor (2017–2023) to Associate Professor with tenure (2023–2025). 
+I am a tenured Associate Professor at the University of Florida and the Director of the DreamX Lab, where I lead research in AI, robotics, and data science. Prior to joining UF, I held the David Goodpasture Endowed faculty position in the Department of Civil and Environmental Engineering at the University of Tennessee Knoxville, with a joint appointment in the Department of Mechanical, Aerospace, and Biomedical Engineering. During my time there, I was promoted from Assistant Professor (2017–2023) to Associate Professor with tenure (2023–2025).
 
 I have an interdisciplinary expertise and experience. I earned my Ph.D. degree in Civil Engineering from Purdue University in 2017, where I also received three M.S. degrees in Economics (2016), Industrial Engineering (2015), and Construction Engineering and Management (2014). My undergraduate studies were completed at Tianjin University, China, where I received dual B.S. degrees in Hydraulics and Hydroelectric Engineering and Project Management, both in 2012.
 
