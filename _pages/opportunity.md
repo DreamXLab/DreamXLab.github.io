@@ -62,7 +62,7 @@ nav_order: 6
   <h4><strong>Master and Undergraduate Students</strong></h4>
   <p>We welcome volunteer-based research internships (remote or in-person) for master and undergraduate students interested in gaining research experience. Please note:</p>
   <ul>
-    <li>Funding or compensation is <strong>NOT</strong> available for these positions.</li>
+    <li>Funding or compensation is NOT available for these positions.</li>
     <li>Research work must align with the lab’s mission and your research interests.</li>
     <li>Interns may be eligible for authorship on publications, depending on contribution and performance.</li>
   </ul>
