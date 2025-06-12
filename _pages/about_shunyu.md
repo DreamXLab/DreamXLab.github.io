@@ -1,6 +1,0 @@
-- Shunyu Yao
-- An AI researcher with a strong background in software engineering, his research interets include:
-  - Vision–Language–Action (VLA) Models for Long-Horizon Action Planning and Autonomous Navigation
-  - Deep Learning–Based 3D Computer Vision for Scene Reconstruction and Understanding
-- [LinkedIn:https://www.linkedin.com/in/shunyuyao7/](https://www.linkedin.com/in/shunyuyao7/)
-- [Personal Website:https://jas000n.github.io/](https://jas000n.github.io/)

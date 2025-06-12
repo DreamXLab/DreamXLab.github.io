@@ -3,17 +3,15 @@ layout: default
 ---
 <div class="post">
   <header class="post-header" style="text-align: center;">
-    <h1 class="post-title">
+    <h1 class="post-title" style="font-size: 4em; font-weight: bold;">
       {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span>
-        {{ site.middle_name }}
-        {{ site.last_name }}
+        {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}
       {% else %}
         {{ site.title }}
       {% endif %}
     </h1>
-    <p class="desc">{{ page.subtitle }}</p>
   </header>
+</div>
 
   <article>
     {% if page.profile %}
@@ -38,9 +36,10 @@ layout: default
         {% endif %}
         <!-- Social -->
         {% if page.social %}
-          <div class="social">
+          <div class="social" style="margin-top:-12px;">   
             <div class="contact-icons">{% include social.liquid %}</div>
-            <a href="{{ site.baseurl }}/fundings/funding">Funded Projects</a> | <a href="{{ site.baseurl }}/awards/award">Professional Awards</a>
+            <a href="{{ site.baseurl }}/fundings/funding">Funded Projects</a> |
+            <a href="{{ site.baseurl }}/awards/award">Professional Awards</a>
             <div class="contact-note">{{ site.contact_note }}</div>
           </div>
         {% endif %}
@@ -50,16 +49,26 @@ layout: default
     <div class="clearfix">{{ content }}</div>
 
     <div style="height:1em"></div>
+     <h3>Recent Highlights</h3>
+    <ul style="margin:0; padding:0; list-style-position:inside;">
+      <li>
+     
+          I co-lead the Semiconductor X Space research thrust at University of Florida to advance next-generation sensors, actuators, and power systems for space applications through cutting-edge semiconductor innovations.
+      </li>
+    </ul>
 
+
+     {% raw %}<hr>{% endraw %}
+
+     
     <!-- AI Explorer -->
     {% if page.AI_Explorer and page.AI_Explorer.content %}
       <section>
-        <h2>AI Explorer</h2>
+        <h3>AI Explorer</h3>
         <div>
           {{ page.AI_Explorer.content }}
         </div>
         <style>
-          /* 给你的列表一个 class 方便定位 */
           .ai-explorer-list li::first-letter {
             font-weight: bold;
             text-transform: uppercase;
@@ -67,41 +76,47 @@ layout: default
           }
         </style>
 
-        <ul class="ai-explorer-list">
-          {% for key in page.AI_Explorer.list %}
-            <li>
-              {{ key }}
-              {{ page.AI_Explorer.list[key] }}
+        <ul class="ai-explorer-list" style="margin:0; padding:0; list-style-position:inside;">
+          {% for pair in page.AI_Explorer.list %}
+            {% assign key   = pair[0] %}
+            {% assign value = pair[1] %}
+            <li style="margin:0; padding:0;">
+              <a href="about:blank" target="_blank">{{ key }}</a>
+              {{ value }}
             </li>
           {% endfor %}
         </ul>
+
+        {% raw %}<hr>{% endraw %}
       </section>
     {% endif %}
 
     <!-- Recent Highlights and Focus -->
     {% if page.Deep_Tech_Entrepreneur and page.Deep_Tech_Entrepreneur.enabled %}
       <section>
-        <h2>Deep Tech Entrepreneur</h2>
+        <h3>Deep Tech Entrepreneur</h3>
         <div>
           {{ page.Deep_Tech_Entrepreneur.content }}
         </div>
+        {% raw %}<hr>{% endraw %}
       </section>
     {% endif %}
 
     <div style="height:1em"></div>
     {% if page.Engineer_and_Economic_Consultant and page.Engineer_and_Economic_Consultant.enabled %}
       <section>
-        <h2>Engineer and Economic Consultant</h2>
+        <h3>Engineer and Economic Consultant</h3>
         <div>
           {{ page.Engineer_and_Economic_Consultant.content }}
         </div>
+        {% raw %}<hr>{% endraw %}
       </section>
     {% endif %}
 
     <div style="height:1em"></div>
     {% if page.Educator and page.Educator.enabled %}
       <section>
-        <h2>Educator</h2>
+        <h3>Educator</h3>
         <div>
           {{ page.Educator.content }}
         </div>

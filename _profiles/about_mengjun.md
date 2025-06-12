@@ -1,6 +1,11 @@
-Mengjun Wang （王梦君）
-
-&nbsp;&nbsp;&nbsp;class Mengjun  
+---
+role: phd
+website: https://volweb2.utk.edu/~mwang43/
+image: /assets/img/Mengjun_pic.jpg
+name: Mengjun Wang （王梦君）
+image_circular: false
+---
+class Mengjun  
 &nbsp;&nbsp;&nbsp;{  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public:  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mengjun()  
@@ -16,6 +21,3 @@ Mengjun Wang （王梦君）
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}   -->
 
 &nbsp;&nbsp;&nbsp;}
-
-- [LinkedIn: https://www.linkedin.com/in/mengjun-wang-50b58525a](https://www.linkedin.com/in/mengjun-wang-50b58525a)
-- [Personal Website: https://volweb2.utk.edu/~mwang43/](https://volweb2.utk.edu/~mwang43/)

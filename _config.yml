@@ -154,6 +154,8 @@ collections:
   awards:
     output: true
     permalink: /awards/:path/
+  profiles:
+    output: true
 
 # -----------------------------------------------------------------------------
 # Jekyll settings

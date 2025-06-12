@@ -48,8 +48,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I hold a Ph.D. in Civil Engineering (2017) from Purdue University, where I also earned M.S. degrees in Economics (2016), Industrial Engineering (2015), and Construction Engineering and Management (2014). I received B.S. degrees in Hydraulics & Hydroelectric Engineering (2012) and Project Management (2012) from Tianjin University. Prior to joining the University of Florida, I served at the University of Tennessee, Knoxville, where I was promoted from Assistant Professor (2017–2023) to Tenured Associate Professor (2023–2024), with a primary appointment in Civil & Environmental Engineering and a joint appointment in Mechanical, Aerospace & Biomedical Engineering. I am an AI Explorer, deep tech Entrepreneur, Economic consultant and Engineer, and dedicated Educator.
+I am a tenured Associate Professor at the University of Florida and the Director of the DreamX Lab, where I lead research in AI, robotics, and data science. Prior to joining UF, I held the David Goodpasture Endowed faculty position in the Department of Civil and Environmental Engineering at the University of Tennessee Knoxville, with a joint appointment in the Department of Mechanical, Aerospace, and Biomedical Engineering. During my time there, I was promoted from Assistant Professor (2017–2023) to Associate Professor with tenure (2023–2025). 
 
-Recent highlights
+I have an interdisciplinary expertise and experience. I earned my Ph.D. degree in Civil Engineering from Purdue University in 2017, where I also received three M.S. degrees in Economics (2016), Industrial Engineering (2015), and Construction Engineering and Management (2014). My undergraduate studies were completed at Tianjin University, China, where I received dual B.S. degrees in Hydraulics and Hydroelectric Engineering and Project Management, both in 2012.
 
-- I will co-lead Semiconductor × Space research thrust to advance next-generation sensors, actuators, and power systems for space applications through cutting-edge semiconductor innovations.
+I strive to contribute as an AI Explorer, deep tech Entrepreneur, Engineer and Economic consultant, as well as a dedicated Educator. I am committed to advancing use-inspired innovation and translating research into real-world impact through collaboration, mentorship, and technology-driven solutions.
+
+{% raw %}<hr>{% endraw %}
