@@ -7,31 +7,51 @@ nav: true
 nav_order: 7
 
 profiles:
-  - align: right
-    image: prof_pic.jpg
-    content: about_shuai.md
+  - image: /assets/img/prof_pic.jpg
     image_circular: false
-    url: https://shuai.example.com
+    url: https://dreamxlab.github.io/
     role: pi
+    name: Shuai LI
+    description: PI of DreamX Lab at University of Florida
 
-  - align: left
-    image: songyang_pic.jpg
-    content: about_songyang.md
+  - image: /assets/img/Mengjun_pic.jpg
     image_circular: false
-    url: https://songyang.example.com
+    url: https://volweb2.utk.edu/~mwang43/
     role: phd
+    name: Mengjun Wang （王梦君）
+    description: |
+      class Mengjun  
+      {  
+        public:  
+          Mengjun()  
+          {  
+            // Fuel: 🍣 ☕️ 🧋 — essential for research in 🏗️ 🤖 🧩.  
+            // Hobbies: 🏸 🛒 🀄  
+            // Mood: caffeinated & curious.  
+          } 
+      }
 
-  - align: right
-    image: shunyu_pic.jpg
-    content: about_shunyu.md
+  - image: /assets/img/songyang_pic.png
     image_circular: false
-    url: https://shunyu.example.com
+    url: https://www.linkedin.com/in/songyang-liu-6195a41a0/
+    role: phd
+    name: Songyang Liu
+    description: PhD student at DreamX Lab
+
+  - image: /assets/img/shunyu_pic.png
+    image_circular: false
+    url: https://jas000n.github.io/
+    role: phd
+    name: Shunyu Yao
+    description: |
+      An AI researcher with a strong background in software engineering, his research interets include: 1. Vision–Language–Action (VLA) Models for Long-Horizon Action Planning and Autonomous 2. Navigation Deep Learning–Based 3D Computer Vision for Scene Reconstruction and Understanding
+
+  - image: /assets/img/default_pic.png
+    image_circular: false
+    url: https://dreamxlab.github.io/
     role: master
-
-  - align: left
-    image: Mengjun_pic.jpg
-    content: about_mengjun.md
-    image_circular: false
-    url: https://mengjun.example.com
-    role: phd
+    name: master student
+    description: A master student working with xxx on xxx project
 ---
+
+asdadasdasd

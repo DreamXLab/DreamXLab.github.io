@@ -5,7 +5,9 @@ layout: default
   <header class="post-header" style="text-align: center;">
     <h1 class="post-title" style="font-size: 4em; font-weight: bold;">
       {% if site.title == 'blank' %}
-        {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}
+        {{ site.first_name }}
+        {{ site.middle_name }}
+        {{ site.last_name }}
       {% else %}
         {{ site.title }}
       {% endif %}
@@ -13,142 +15,139 @@ layout: default
   </header>
 </div>
 
-  <article>
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
+<article>
+  {% if page.profile %}
+    <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+      {% if page.profile.image %}
+        {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+        {% if page.profile.image_circular %}
+          {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+        {% else %}
+          {% assign profile_image_class = 'img-fluid z-depth-1
       rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
+        {% endif %}
+        {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
       30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
-        {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
-        <!-- Social -->
-        {% if page.social %}
-          <div class="social" style="margin-top:-12px;">   
-            <div class="contact-icons">{% include social.liquid %}</div>
-            <a href="{{ site.baseurl }}/fundings/funding">Funded Projects</a> |
-            <a href="{{ site.baseurl }}/awards/award">Professional Awards</a>
-            <div class="contact-note">{{ site.contact_note }}</div>
-          </div>
-        {% endif %}
+        {%
+          include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+          cache_bust=true
+        %}
+      {% endif %}
+      {% if page.profile.more_info %}
+        <div class="more-info">{{ page.profile.more_info }}</div>
+      {% endif %}
+      <!-- Social -->
+      {% if page.social %}
+        <div class="social" style="margin-top:-12px;">
+          <div class="contact-icons">{% include social.liquid %}</div>
+          <a href="{{ site.baseurl }}/fundings/funding">Funded Projects</a> |
+          <a href="{{ site.baseurl }}/awards/award">Professional Awards</a>
+          <div class="contact-note">{{ site.contact_note }}</div>
+        </div>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  <div class="clearfix">{{ content }}</div>
+
+  <div style="height:1em"></div>
+  <h3>Recent Highlights</h3>
+  <ul style="margin:0; padding:0; list-style-position:inside;">
+    <li>
+      I co-lead the Semiconductor X Space research thrust at University of Florida to advance next-generation sensors, actuators, and power systems
+      for space applications through cutting-edge semiconductor innovations.
+    </li>
+  </ul>
+
+  {% raw %}<hr>{% endraw %}
+
+  <!-- AI Explorer -->
+  {% if page.AI_Explorer and page.AI_Explorer.content %}
+    <section>
+      <h3>AI Explorer</h3>
+      <div>
+        {{ page.AI_Explorer.content }}
       </div>
-    {% endif %}
+      <style>
+        .ai-explorer-list li::first-letter {
+          font-weight: bold;
+          text-transform: uppercase;
+          font-size: 1.3em;
+        }
+      </style>
 
-    <div class="clearfix">{{ content }}</div>
+      <ul class="ai-explorer-list" style="margin:0; padding:0; list-style-position:inside;">
+        {% for pair in page.AI_Explorer.list %}
+          {% assign key = pair[0] %}
+          {% assign value = pair[1] %}
+          <li style="margin:0; padding:0;">
+            <a href="about:blank" target="_blank">{{ key }}</a>
+            {{ value }}
+          </li>
+        {% endfor %}
+      </ul>
 
-    <div style="height:1em"></div>
-     <h3>Recent Highlights</h3>
-    <ul style="margin:0; padding:0; list-style-position:inside;">
-      <li>
-     
-          I co-lead the Semiconductor X Space research thrust at University of Florida to advance next-generation sensors, actuators, and power systems for space applications through cutting-edge semiconductor innovations.
-      </li>
-    </ul>
+      {% raw %}<hr>{% endraw %}
+    </section>
+  {% endif %}
 
+  <!-- Recent Highlights and Focus -->
+  {% if page.Deep_Tech_Entrepreneur and page.Deep_Tech_Entrepreneur.enabled %}
+    <section>
+      <h3>Deep Tech Entrepreneur</h3>
+      <div>
+        {{ page.Deep_Tech_Entrepreneur.content }}
+      </div>
+      {% raw %}<hr>{% endraw %}
+    </section>
+  {% endif %}
 
-     {% raw %}<hr>{% endraw %}
+  <div style="height:1em"></div>
+  {% if page.Engineer_and_Economic_Consultant and page.Engineer_and_Economic_Consultant.enabled %}
+    <section>
+      <h3>Engineer and Economic Consultant</h3>
+      <div>
+        {{ page.Engineer_and_Economic_Consultant.content }}
+      </div>
+      {% raw %}<hr>{% endraw %}
+    </section>
+  {% endif %}
 
-     
-    <!-- AI Explorer -->
-    {% if page.AI_Explorer and page.AI_Explorer.content %}
-      <section>
-        <h3>AI Explorer</h3>
-        <div>
-          {{ page.AI_Explorer.content }}
-        </div>
-        <style>
-          .ai-explorer-list li::first-letter {
-            font-weight: bold;
-            text-transform: uppercase;
-            font-size: 1.3em;
-          }
-        </style>
+  <div style="height:1em"></div>
+  {% if page.Educator and page.Educator.enabled %}
+    <section>
+      <h3>Educator</h3>
+      <div>
+        {{ page.Educator.content }}
+      </div>
+    </section>
+  {% endif %}
 
-        <ul class="ai-explorer-list" style="margin:0; padding:0; list-style-position:inside;">
-          {% for pair in page.AI_Explorer.list %}
-            {% assign key   = pair[0] %}
-            {% assign value = pair[1] %}
-            <li style="margin:0; padding:0;">
-              <a href="about:blank" target="_blank">{{ key }}</a>
-              {{ value }}
-            </li>
-          {% endfor %}
-        </ul>
+  <!-- News -->
+  {% if page.announcements and page.announcements.enabled %}
+    <h2>
+      <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+    </h2>
+    {% include news.liquid limit=true %}
+  {% endif %}
 
-        {% raw %}<hr>{% endraw %}
-      </section>
-    {% endif %}
+  <!-- Latest posts -->
+  {% if page.latest_posts and page.latest_posts.enabled %}
+    <h2>
+      <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+    </h2>
+    {% include latest_posts.liquid %}
+  {% endif %}
 
-    <!-- Recent Highlights and Focus -->
-    {% if page.Deep_Tech_Entrepreneur and page.Deep_Tech_Entrepreneur.enabled %}
-      <section>
-        <h3>Deep Tech Entrepreneur</h3>
-        <div>
-          {{ page.Deep_Tech_Entrepreneur.content }}
-        </div>
-        {% raw %}<hr>{% endraw %}
-      </section>
-    {% endif %}
+  <!-- Selected papers -->
+  {% if page.selected_papers %}
+    <h2>
+      <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+    </h2>
+    {% include selected_papers.liquid %}
+  {% endif %}
 
-    <div style="height:1em"></div>
-    {% if page.Engineer_and_Economic_Consultant and page.Engineer_and_Economic_Consultant.enabled %}
-      <section>
-        <h3>Engineer and Economic Consultant</h3>
-        <div>
-          {{ page.Engineer_and_Economic_Consultant.content }}
-        </div>
-        {% raw %}<hr>{% endraw %}
-      </section>
-    {% endif %}
-
-    <div style="height:1em"></div>
-    {% if page.Educator and page.Educator.enabled %}
-      <section>
-        <h3>Educator</h3>
-        <div>
-          {{ page.Educator.content }}
-        </div>
-      </section>
-    {% endif %}
-
-    <!-- News -->
-    {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
-      {% include news.liquid limit=true %}
-    {% endif %}
-
-    <!-- Latest posts -->
-    {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
-    {% endif %}
-
-    <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
-    {% endif %}
-
-    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
-      {% include newsletter.liquid center=true %}
-    {% endif %}
-  </article>
-</div>
+  {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
+    {% include newsletter.liquid center=true %}
+  {% endif %}
+</article>

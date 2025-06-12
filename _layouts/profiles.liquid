@@ -1,143 +1,142 @@
 ---
 layout: default
 ---
+<div>
   <header class="post-header">
     <h1 class="post-title" style="font-size: 4em; font-weight: bold; text-align: center;">{{ page.title }}</h1>
   </header>
-<div class="profiles-page">
 
-  {% assign roles_order = "pi:Principal Investigator,postdoc:Postdoctoral Researchers,phd:Ph.D. Students,master:Master Students,undergraduate:Undergraduate Students" | split: "," %}
+  <div class="profiles-page">
+    {% assign roles_order = 'pi:Principal Investigator,postdoc:Postdoctoral Researchers,phd:Ph.D. Students,master:Master Students,undergraduate:Undergraduate Students'
+      | split: ','
+    %}
 
-  {% for role_pair in roles_order %}
-    {% assign role_key   = role_pair | split: ":" | first %}
-    {% assign role_label = role_pair | split: ":" | last %}
-    {% assign members    = site.profiles | where: "role", role_key %}
+    {% for role_pair in roles_order %}
+      {% assign role_key = role_pair | split: ':' | first %}
+      {% assign role_label = role_pair | split: ':' | last %}
+      {% assign members = page.profiles | where: 'role', role_key %}
 
-    {% if members.size > 0 %}
-      <section class="profiles-section {{ role_key }}">
-        <h2>{{ role_label }}</h2>
-        {% if role_key == 'pi' %}
-          <div class="profiles-grid profiles-grid-pi">
-        {% else %}
-          <div class="profiles-grid">
-        {% endif %}
+      {% if members.size > 0 %}
+        <section class="profiles-section {{ role_key }}">
+          <h2>{{ role_label }}</h2>
 
-          {% for profile in members %}
-            <div class="profile-card">
-              <a href="{{ profile.website }}" target="_blank" class="profile-link">
-                <img
-                  src="{{ profile.image | relative_url }}"
-                  alt="{{ profile.name }}"
-                  class="avatar{% if profile.image_circular %} circular{% endif %}"
-                >
-                <div class="profile-name">{{ profile.name }}</div>
-                <div class="bio-overlay">
-                  {{ profile.content | markdownify }}
-                </div>
-              </a>
-            </div>
-          {% endfor %}
-
-        </div>
-      </section>
-    {% endif %}
-  {% endfor %}
-
+          <div class="profiles-grid{% if role_key == 'pi' %} profiles-grid-pi{% endif %}">
+            {% for profile in members %}
+              <div class="profile-card align-{{ profile.align }}">
+                <a href="{{ profile.url }}" target="_blank" class="profile-link">
+                  <img
+                    src="{{ profile.image | relative_url }}"
+                    alt="{{ profile.name }}"
+                    class="avatar{% if profile.image_circular %} circular{% endif %}"
+                  >
+                  <div class="profile-name">{{ profile.name }}</div>
+                  <div class="bio-overlay">
+                    {{ profile.description | markdownify }}
+                  </div>
+                </a>
+              </div>
+            {% endfor %}
+          </div>
+          <!-- /.profiles-grid -->
+        </section>
+      {% endif %}
+    {% endfor %}
+  </div>
 </div>
 
 <style>
-/* 页面容器 */
-.profiles-page {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-}
+  /* 页面容器 */
+  .profiles-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
 
-/* 不同 section 之间的间距 */
-.profiles-section + .profiles-section {
-  margin-top: 3rem;
-}
+  /* 不同 section 之间的间距 */
+  .profiles-section + .profiles-section {
+    margin-top: 3rem;
+  }
 
-/* Section 标题样式 */
-.profiles-section h2 {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: .5rem;
-}
+  /* Section 标题样式 */
+  .profiles-section h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.5rem;
+  }
 
-/* 栅格布局 */
-.profiles-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
-}
+  /* 栅格布局 */
+  .profiles-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
 
-/* PI 特殊布局 */
-.profiles-grid-pi {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-}
+  /* PI 特殊布局 */
+  .profiles-grid-pi {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
 
-/* 卡片基础样式 */
-.profile-card {
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-}
+  /* 卡片基础样式 */
+  .profile-card {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
 
-/* 链接全卡片可点击 */
-.profile-link {
-  display: block;
-  color: inherit;
-  text-decoration: none;
-}
+  /* 链接全卡片可点击 */
+  .profile-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+  }
 
-/* 头像：等宽高正方形并裁剪 */
-.avatar {
-  display: block;
-  width: 100%;
-  aspect-ratio: 1 / 1;   /* 保持 1:1 宽高比 */
-  object-fit: cover;     /* 按比例裁剪并填满 */
-}
+  /* 头像：等宽高正方形并裁剪 */
+  .avatar {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1; /* 保持 1:1 宽高比 */
+    object-fit: cover; /* 按比例裁剪并填满 */
+  }
 
-/* 圆头像可选 */
-.avatar.circular {
-  border-radius: 50%;
-}
+  /* 圆头像可选 */
+  .avatar.circular {
+    border-radius: 50%;
+  }
 
-/* 姓名居中加粗 */
-.profile-name {
-  margin-top: 0.5rem;
-  font-weight: bold;
-  text-align: center;
-}
+  /* 姓名居中加粗 */
+  .profile-name {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
 
-/* 悬浮显示简介 */
-.bio-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255,255,255,0.95);
-  padding: 1rem;
-  opacity: 0;
-  overflow-y: auto;
-  transition: opacity .3s ease;
-  box-sizing: border-box;
-}
+  /* 悬浮显示简介 */
+  .bio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1rem;
+    opacity: 0;
+    overflow-y: auto;
+    transition: opacity 0.3s ease;
+    box-sizing: border-box;
+  }
 
-.profile-card:hover .bio-overlay {
-  opacity: 1;
-}
+  .profile-card:hover .bio-overlay {
+    opacity: 1;
+  }
 
-/* 列表缩进 */
-.bio-overlay ul,
-.bio-overlay ol {
-  margin-left: 0;
-  padding-left: 1.25em;
-}
+  /* 列表缩进 */
+  .bio-overlay ul,
+  .bio-overlay ol {
+    margin-left: 0;
+    padding-left: 1.25em;
+  }
 </style>
