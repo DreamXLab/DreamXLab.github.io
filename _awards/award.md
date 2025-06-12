@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Awards & Honors"
+title: "Awards and Honors"
 permalink: /awards/award/
 awards:
   - title: "Chancellor’s Innovation Fund Award"
@@ -109,6 +109,7 @@ awards:
 <div class="container">
 
 {% for award in page.awards %}
+
 <div class="award">
 <div class="award-header">
 <div class="award-title">{{ award.title }}</div>
