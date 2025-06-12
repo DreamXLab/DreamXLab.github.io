@@ -17,14 +17,14 @@ ninja.data = [{
             window.location.href = "/projects/";
           },
         },{id: "nav-opportunity",
-          title: "opportunity",
-          description: "Thank you for your interest in DreamX Lab!",
+          title: "Opportunity",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/opportunity/";
           },
         },{id: "nav-people",
-          title: "people",
+          title: "People",
           description: "members of the DreamXLab",
           section: "Navigation",
           handler: () => {
@@ -394,10 +394,10 @@ ninja.data = [{
           
         },
       },{id: "awards-awards-amp-honors",
-          title: 'AWARDS &amp;amp; HONORS',
+          title: 'Awards &amp;amp; Honors',
           description: "",
           section: "Awards",handler: () => {
-              window.location.href = "/awards/award";
+              window.location.href = "/awards/award/";
             },},{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
@@ -419,7 +419,32 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-1",
+          section: "News",},{id: "profiles-about-master-student",
+          title: 'About_master_student',
+          description: "",
+          section: "Profiles",handler: () => {
+              window.location.href = "/profiles/about_master_student/";
+            },},{id: "profiles-about-mengjun",
+          title: 'About_mengjun',
+          description: "",
+          section: "Profiles",handler: () => {
+              window.location.href = "/profiles/about_mengjun/";
+            },},{id: "profiles-about-shuaili",
+          title: 'About_shuaili',
+          description: "",
+          section: "Profiles",handler: () => {
+              window.location.href = "/profiles/about_shuaili/";
+            },},{id: "profiles-about-shunyu",
+          title: 'About_shunyu',
+          description: "",
+          section: "Profiles",handler: () => {
+              window.location.href = "/profiles/about_shunyu/";
+            },},{id: "profiles-about-songyang",
+          title: 'About_songyang',
+          description: "",
+          section: "Profiles",handler: () => {
+              window.location.href = "/profiles/about_songyang/";
+            },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
