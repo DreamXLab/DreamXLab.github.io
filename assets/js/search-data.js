@@ -40,31 +40,6 @@ ninja.data = [{
           description: "",
           section: "Fundings",handler: () => {
               window.location.href = "/fundings/funding";
-            },},{id: "profiles-about-master-student",
-          title: 'About_master_student',
-          description: "",
-          section: "Profiles",handler: () => {
-              window.location.href = "/profiles/about_master_student/";
-            },},{id: "profiles-about-mengjun",
-          title: 'About_mengjun',
-          description: "",
-          section: "Profiles",handler: () => {
-              window.location.href = "/profiles/about_mengjun/";
-            },},{id: "profiles-about-shuaili",
-          title: 'About_shuaili',
-          description: "",
-          section: "Profiles",handler: () => {
-              window.location.href = "/profiles/about_shuaili/";
-            },},{id: "profiles-about-shunyu",
-          title: 'About_shunyu',
-          description: "",
-          section: "Profiles",handler: () => {
-              window.location.href = "/profiles/about_shunyu/";
-            },},{id: "profiles-about-songyang",
-          title: 'About_songyang',
-          description: "",
-          section: "Profiles",handler: () => {
-              window.location.href = "/profiles/about_songyang/";
             },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
