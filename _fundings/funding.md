@@ -2,13 +2,12 @@
 layout: page
 permalink: /fundings/funding
 title: Funded Projects
-nav: true
 filter_tags:
   - "National Science Foundation"
   - "Robotics & AI"
 funding:
   - title: "Elements: A Convergent Physics-based and Data-driven Computing Platform for Building Modeling"
-    period: "09/01/2023 – 08/31/2026"
+    period: "09/2023 – 08/2026"
     amount: "$584,094"
     categories:
       - "External Grants and Contracts"
@@ -16,7 +15,7 @@ funding:
       - "Co-PI"
       - "Robotics & AI"
   - title: "SCC-PG: Securing Underserved Communities from Drug Abuse with Drone-Based Smart Medication Delivery"
-    period: "04/01/2023 – 03/31/2024"
+    period: "04/2023 – 03/2024"
     amount: "$150,000"
     categories:
       - "External Grants and Contracts"
@@ -24,14 +23,14 @@ funding:
       - "Co-PI"
       - "Robotics & AI"
   - title: "Lignin-Derived Carbon Storing Foams for High Performance Insulation"
-    period: "11/01/2022 – 10/31/2024"
+    period: "11/2022 – 10/2024"
     amount: "$2,707,550"
     categories:
       - "External Grants and Contracts"
       - "Department of Energy"
       - "Co-PI"
   - title: "FW-HTF-R: Fair4Wise: Future AI and Robots for Women in Smart Engineering"
-    period: "09/01/2022 – 08/31/2025"
+    period: "09/2022 – 08/2025"
     amount: "$1,807,743"
     categories:
       - "External Grants and Contracts"
@@ -39,7 +38,7 @@ funding:
       - "PI"
       - "Robotics & AI"
   - title: "I-Corps: Artificial Intelligence (AI)-Enabled and Digital Twin Interactive Robots for Facility Hygiene and Human Health"
-    period: "07/01/2022 – 12/31/2023"
+    period: "07/2022 – 12/2023"
     amount: "$49,971"
     categories:
       - "External Grants and Contracts"
@@ -47,14 +46,14 @@ funding:
       - "PI"
       - "Robotics & AI"
   - title: "STEM Education and Apprenticeship Liaison (SEAL) for Navy"
-    period: "05/01/2022 – 04/30/2025"
+    period: "05/2022 – 04/2025"
     amount: "$600,000"
     categories:
       - "Senior Personnel"
       - "Office of Naval Research"
       - "External Grants and Contracts"
   - title: "FW-HTF-R/Collaborative Research: Human-Robot Sensory Transfer for Worker Productivity, Training, and Quality of Life in Remote Undersea Inspection and Construction Tasks"
-    period: "12/01/2021 – 11/30/2025"
+    period: "12/2021 – 11/2025"
     amount: "$224,999"
     categories:
       - "PI"
@@ -62,7 +61,7 @@ funding:
       - "External Grants and Contracts"
       - "Robotics & AI"
   - title: "CPS: Medium: Bio-socially Adaptive Control of Robotics-Augmented Building-Human Systems for Infection Prevention by Cybernation of Pathogen Transmission"
-    period: "01/01/2021 – 12/31/2024"
+    period: "01/2021 – 12/2024"
     amount: "$1,199,129"
     categories:
       - "PI"
@@ -70,14 +69,14 @@ funding:
       - "External Grants and Contracts"
       - "Robotics & AI"
   - title: "SCC-PG: Toward Disease-Resistant School Communities by Reinventing the Interface among Built Environments, Occupants, and Microbiomes"
-    period: "10/01/2020 – 4/30/2022"
+    period: "10/2020 – 4/2022"
     amount: "$149,998"
     categories:
       - "PI"
       - "National Science Foundation"
       - "External Grants and Contracts"
   - title: "Drones and Other Technologies to Assist in Disaster Relief Efforts"
-    period: "09/01/2020 – 2/28/2022"
+    period: "09/2020 – 2/2022"
     amount: "$149,999"
     categories:
       - "PI"
@@ -85,7 +84,7 @@ funding:
       - "Tennessee Department of Transportation"
       - "Robotics & AI"
   - title: "Smart Design and Operation of Ventilation Systems to Reduce Indoor Pathogen Transmission"
-    period: "09/01/2020 – 12/31/2020"
+    period: "09/2020 – 12/2020"
     amount: "$9,956"
     categories:
       - "PI"
@@ -93,21 +92,21 @@ funding:
       - "Trimble, Inc."
       - "Robotics & AI"
   - title: "RAPID: Impacts of Design and Operation Attributes of Mass-Gathering Civil Infrastructure Systems on Pathogen Transmission and Exposure"
-    period: "05/01/2020 – 8/31/2022"
+    period: "05/2020 – 8/2022"
     amount: "$199,809"
     categories:
       - "PI"
       - "External Grants and Contracts"
       - "National Science Foundation"
   - title: "Pollutant Sourcing Identification in Impaired Surface Waters"
-    period: "03/01/2020 – 02/29/2021"
+    period: "03/2020 – 02/2021"
     amount: "$75,493"
     categories:
       - "Co-PI"
       - "External Grants and Contracts"
       - "United States Geological Survey"
   - title: "CRII: CPS: Coupling Subsurface Features with Connected Autonomous Vehicles as Networked Cyber-Physical Systems for Reciprocal Mapping and Localization"
-    period: "05/01/2019 – 4/30/2022"
+    period: "05/2019 – 4/2022"
     amount: "$175,000"
     categories:
       - "PI"
@@ -115,14 +114,14 @@ funding:
       - "National Science Foundation"
       - "Robotics & AI"
   - title: "Concrete Bridge Deck Deterioration Assessment Using Ground Penetrating Radar"
-    period: "01/17/2019 – 5/31/2021"
+    period: "01/2019 – 5/2021"
     amount: "$149,681"
     categories:
       - "PI"
       - "External Grants and Contracts"
       - "Tennessee Department of Transportation"
   - title: "Toward Precision Environmental Health Risk Management: Feasibility of Personalized Exposome Monitoring"
-    period: "01/01/2021 – 12/31/2021"
+    period: "01/2021 – 12/2021"
     amount: "$45,000"
     categories:
       - "Co-PI"
@@ -130,14 +129,14 @@ funding:
       - "Internal Funding"
       - "Robotics & AI"
   - title: "Feasibility of Personalized Monitoring of Environmental Exposomes toward Prevention of Alzheimer’s Disease and Related Dementia"
-    period: "01/01/2021 – 8/31/2021"
+    period: "01/2021 – 8/2021"
     amount: "$5,000"
     categories:
       - "Co-PI"
       - "University of Tennessee"
       - "Internal Funding"
   - title: "Artificial Intelligence Aided 3D Metagenomic Mapping of Built Environments and Humans to Model Pathogen Transmission"
-    period: "08/01/2020 – 07/31/2022"
+    period: "08/2020 – 07/2022"
     amount: "$149,331"
     categories:
       - "PI"
@@ -145,7 +144,7 @@ funding:
       - "Internal Funding"
       - "Robotics & AI"
   - title: "Pathogen Transmission Pathway Identification by Fomite and Behavior Monitoring"
-    period: "08/01/2020 – 07/31/2022"
+    period: "08/2020 – 07/2022"
     amount: "$47,000"
     categories:
       - "Co-PI"
@@ -153,7 +152,7 @@ funding:
       - "Internal Funding"
       - "Robotics & AI"
   - title: "Trust-Aware Human-Robot Interface for Occluded and Uncertain Space Search"
-    period: "05/01/2019 – 6/30/2020"
+    period: "05/2019 – 6/2020"
     amount: "$69,962"
     categories:
       - "PI"
@@ -161,7 +160,7 @@ funding:
       - "Internal Funding"
       - "Robotics & AI"
   - title: "Visibility Enhancement for Autonomous Construction Machines Based on Prediction"
-    period: "01/10/2018 – 05/08/2018"
+    period: "01/2018 – 05/2018"
     amount: "$2,000"
     categories:
       - "PI"
@@ -213,6 +212,7 @@ We gratefully acknowledge the generous support from our sponsors and collaborato
       {% assign funder = funders | first %}
 
       <li data-cats='{{ item.categories | jsonify }}'>
+      <div style="height:1em"></div>
         <div class="fund-entry" style="display:flex; align-items:flex-start; gap:1em; margin-bottom:1.5em;">
 
           <!-- logo -->
@@ -251,6 +251,7 @@ We gratefully acknowledge the generous support from our sponsors and collaborato
 
         </div>
       </li>
+        <div style="height:1em"></div>
        {% raw %}<hr>{% endraw %}
     {% endfor %}
 

@@ -66,7 +66,8 @@ awards:
 ---
 
 <style>
-  .container {
+
+  .awards-container {
     max-width: 800px;
     margin: 2rem auto;
     padding: 0 1rem;
@@ -74,51 +75,63 @@ awards:
     line-height: 1.5;
     color: #222;
   }
-  h1 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 0.5rem;
-  }
-  .award {
-    margin-bottom: 2.5rem;
-  }
+
+
   .award-header {
-    display: grid;
-    grid-template-columns: 2.5fr 2fr 0.5fr;
+    display: flex;
+    justify-content: space-between;
     align-items: baseline;
+    gap: 1rem;
   }
+
+
+  .award-header > div {
+    white-space: nowrap;
+  }
+
+
   .award-title {
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 0.95rem; 
+    flex: 1 1 auto;  
   }
+
+
   .award-institution {
     font-style: italic;
-    text-align: left;
+    font-size: 0.9rem;
+    flex: 0 0 auto;
   }
+
   .award-year {
+    font-size: 0.9rem;
     text-align: right;
-    font-size: 0.95rem;
+    flex: 0 0 auto;
   }
+
   .award-description {
     margin-top: 0.5rem;
     text-indent: 1em;
   }
 </style>
 
-<div class="container">
+{% raw %}<hr>{% endraw %}
+
+<div class="awards-container">
 
 {% for award in page.awards %}
 
-<div class="award">
-<div class="award-header">
-<div class="award-title">{{ award.title }}</div>
-<div class="award-institution">{{ award.institution }}</div>
-<div class="award-year">{{ award.year }}</div>
-</div>
-<p class="award-description">{{ award.description }}</p>
-{% raw %}<hr>{% endraw %}
-</div>
+    <div class="award">
+    <div style="height:1em"></div>
+      <div class="award-header">
+        <div class="award-title">{{ award.title }}</div>
+        <div class="award-institution">{{ award.institution }}</div>
+        <div class="award-year">{{ award.year }}</div>
+      </div>
+      <p class="award-description">{{ award.description }}</p>
+      <div style="height:1em"></div>
+      {% raw %}<hr>{% endraw %}
+    </div>
 
 {% endfor %}
 
