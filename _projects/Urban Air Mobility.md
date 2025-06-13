@@ -4,8 +4,80 @@ title: Urban Air Mobility
 description: Electric vertical-takeoff and landing (eVTOL) aircraft
 img: assets/img/UAM_intro.png
 importance: 4
-category: Mobility
+category: fun
 ---
+---
+layout: default
+title: EVTOL in Urban Air Mobility
+---
+
+# 🚀 Urban eVTOL Storytelling
+
+## 🏙️ Chapter 1: Vision & Context
+
+We imagine a future where cities use **eVTOL** aircraft for on-demand passenger transport—cutting traffic and noise, while revolutionizing urban mobility.
+
+## 🗺️ Chapter 2: Flight Corridor Map
+
+<div id="evtol-map" style="width:100%; height:400px; margin-bottom:2rem;"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+<script>
+  const map = L.map('evtol-map').setView([40.7128, -74.0060], 12); // 纽约为例
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+  // 模拟起飞点 / 着陆点
+  const lanes = [
+    [[40.7128, -74.0060], [40.7308, -73.9975]],
+    [[40.7200, -74.0100], [40.7400, -74.0000]]
+  ];
+
+  lanes.forEach(line => {
+    L.polyline(line, {color: 'crimson', weight: 4, opacity: 0.7}).addTo(map);
+    L.circleMarker(line[0], {radius:6, color:'blue'}).addTo(map);
+    L.circleMarker(line[1], {radius:6, color:'green'}).addTo(map);
+  });
+</script>
+
+## 👨‍✈️ Chapter 3: Lifecycle of a Ride
+
+1. **Request flight** via app  
+2. **VTOL approaches** from nearest vertiport  
+3. **Passengers board**, safety checklist  
+4. **Vertical ascent**, cruise over city  
+5. **Descent and landing** at destination vertiport
+
+---
+
+## ✈️ Chapter 4: Simulation Snapshot
+
+<div style="position:relative; width:100%; max-width:600px; margin:auto;">
+  <img src="{{ site.baseurl }}/images/evtol_snapshot.jpg"
+       alt="eVTOL simulation"
+       style="width:100%; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+  <div style="position:absolute; bottom:8px; left:8px; background:rgba(0,0,0,0.6); padding:0.3em 0.6em; color:#fff; font-size:0.9rem;">
+    Urban flight simulation in Gazebo
+  </div>
+</div>
+
+---
+
+## 🧩 Chapter 5: Outcomes & Impacts
+
+- 🎯 **Reduced ground congestion**  
+- 🕸 **Faster travel times** across urban areas  
+- 🌿 **Lower carbon emissions** and noise
+
+---
+
+## 📚 Learn more
+
+- [FAA on AAM](https://www.faa.gov/air-taxis) :contentReference[oaicite:1]{index=1}  
+- [Trajectory-Based Urban Air Mobility Simulator (TUS)](https://arxiv.org/abs/1908.08651) :contentReference[oaicite:2]{index=2}  
+
+
 
 Electric vertical-takeoff and landing (eVTOL) aircraft, known for their maneuverability and flexibility present a promising alternative to traditional transportation systems. However, these aircraft face significant challenges from multiple perspectives, such as increasing energy efficiency, enhancing passenger experience, and reducing noise impact on urban environments. While mathematical modeling-based approaches have been employed for flight motion planning, they often struggle to adapt to dynamic and complex environments. In this work, we introduce a three-dimensional motion planning method based on deep reinforcement learning (DRL), tailored for manned eVTOL flights through urban wind fields. Our approach considers three crucial aspects: aircraft energy consumption, passenger concerns, and noise impact on urban environment. We modify the Proximal Policy Optimization (PPO) algorithm and design comprehensive reward function that considers these objectives. By incorporating energy efficiency, passenger concerns, and noise impact into our reward function, our method demonstrates improved policy learning compared to existing approaches. Comparative experiments conducted under various wind conditions show that our method outperforms commonly used techniques, effectively optimizing multiple objectives in challenging urban environments.
 
