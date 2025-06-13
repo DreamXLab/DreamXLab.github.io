@@ -91,8 +91,8 @@ ninja.data = [{
           section: "Projects",handler: () => {
               window.location.href = "/projects/Mixed%20Traffic/";
             },},{id: "projects-urban-air-mobility",
-          title: 'Urban Air Mobility',
-          description: "Electric vertical-takeoff and landing (eVTOL) aircraft",
+          title: 'Urban air mobility',
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Urban%20Air%20Mobility/";
             },},{
