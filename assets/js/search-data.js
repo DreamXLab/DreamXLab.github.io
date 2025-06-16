@@ -85,6 +85,11 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-ai-powered-construction-jobsite",
+          title: 'AI‑Powered Construction Jobsite',
+          description: "Integrating LLM‑guided robotic assembly with non‑intrusive audio emotion monitoring into a holistic digital‑twin jobsite pipeline.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/Manufacturing/";
             },},{id: "projects-mixed-traffic",
           title: 'Mixed Traffic',
           description: "another project with an image 🎉",
