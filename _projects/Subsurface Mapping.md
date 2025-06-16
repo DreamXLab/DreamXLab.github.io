@@ -1,5 +1,4 @@
 ---
-
 layout: page
 title: Urban Subsurface Mapping
 description: "Preventing utility strikes through next‑gen subsurface digital twins"
@@ -16,9 +15,9 @@ category: Management
 
 ## 1  Problem & Motivation
 
-* **640+ pipeline incidents** and **\$30 B** in societal costs occur annually because planners cannot “see” what lies below ground.
-* Existing records are incomplete & GPS signals fail in dense urban corridors.
-* Traditional Ground‑Penetrating Radar (GPR) analyses rely on hand‑crafted feature detection, which struggles with noisy, multi‑layer soils and overlapping utilities.
+- **640+ pipeline incidents** and **\$30 B** in societal costs occur annually because planners cannot “see” what lies below ground.
+- Existing records are incomplete & GPS signals fail in dense urban corridors.
+- Traditional Ground‑Penetrating Radar (GPR) analyses rely on hand‑crafted feature detection, which struggles with noisy, multi‑layer soils and overlapping utilities.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -65,10 +64,10 @@ Our work closes **all three gaps** with a unified sensing‑and‑AI pipeline.
 
 ## 5  Why It Matters
 
-* **Safety:** Fewer strikes protect workers & the public.
-* **Cost:** Accurate as‑built data slashes re‑design & delay expenses.
-* **Sustainability:** Minimises needless pavement cuts and material waste.
-* **Smart‑City Readiness:** Provides a foundational layer for digital‑twin‑enabled maintenance and AR guidance.
+- **Safety:** Fewer strikes protect workers & the public.
+- **Cost:** Accurate as‑built data slashes re‑design & delay expenses.
+- **Sustainability:** Minimises needless pavement cuts and material waste.
+- **Smart‑City Readiness:** Provides a foundational layer for digital‑twin‑enabled maintenance and AR guidance.
 
 ---
 
@@ -86,8 +85,8 @@ Our work closes **all three gaps** with a unified sensing‑and‑AI pipeline.
 
 ## 7  Publications
 
-* Wang, M., Hu, D., Chen, J., & Li, S. (2023).* “ Underground infrastructure detection and localization using deep learning enabled radargram inversion and vision based mapping. ” *Automation in Construction* 154, 105004.
+- Wang, M., Hu, D., Chen, J., & Li, S. (2023).* “ Underground infrastructure detection and localization using deep learning enabled radargram inversion and vision based mapping. ” *Automation in Construction\* 154, 105004.
 
-* Wang, M., Hu, D., Li, S., & Cai, J. (2022, December).* “ Urban subsurface mapping via deep learning based GPR data inversion. ” In 2022 Winter Simulation Conference (WSC) (pp. 2440-2450). IEEE.
+- Wang, M., Hu, D., Li, S., & Cai, J. (2022, December).\* “ Urban subsurface mapping via deep learning based GPR data inversion. ” In 2022 Winter Simulation Conference (WSC) (pp. 2440-2450). IEEE.
 
 ---
