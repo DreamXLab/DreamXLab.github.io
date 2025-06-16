@@ -90,6 +90,11 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Mixed%20Traffic/";
+            },},{id: "projects-urban-subsurface-mapping",
+          title: 'Urban Subsurface Mapping',
+          description: "Preventing utility strikes through next‑gen subsurface digital twins",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/Subsurface%20Mapping/";
             },},{id: "projects-urban-air-mobility",
           title: 'Urban air mobility',
           description: "",
