@@ -11,13 +11,14 @@ videos:
     url: /assets/video/surgical/1st.mp4
     cover: /assets/img/surgical/1st_video_cover.png
     title: Technology Overview
-    description:
-      - url: /assets/video/surgical/2nd.mp4
-        title: Real World Demo
-        description: A Biomimetic Soft Robotic System that Cognitively and Physically Assists Surgeons in Minimally Invasive Surgery
-      - url: /assets/video/surgical/3rd.mp4
-        title: Simulation Demo
-        description: A Biomimetic Soft Robotic System that Cognitively and Physically Assists Surgeons in Minimally Invasive Surgery
+    description: "Intro Video"
+  list:
+    - url: /assets/video/surgical/2nd.mp4
+      title: Real World Demo
+      description: A Biomimetic Soft Robotic System that Cognitively and Physically Assists Surgeons in Minimally Invasive Surgery
+    - url: /assets/video/surgical/3rd.mp4
+      title: Simulation Demo
+      description: A Biomimetic Soft Robotic System that Cognitively and Physically Assists Surgeons in Minimally Invasive Surgery
 
 slides:
   list:
