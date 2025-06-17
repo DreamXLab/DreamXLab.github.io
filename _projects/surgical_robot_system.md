@@ -1,6 +1,6 @@
 ---
 layout: project
-title: AI copilot in Surgery
+title: AI Copilot in Surgery
 description: Redefine Surgery Intelligence
 img: /assets/img/surgical/cover.png
 importance: 1
