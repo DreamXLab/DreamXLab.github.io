@@ -27,5 +27,5 @@ slides:
     - url: /assets/img/surgical/slide2.png
       description: A Biomimetic Soft Robotic System that Cognitively and Physically Assists Surgeons in Minimally Invasive Surgery
     - url: /assets/img/surgical/slide3.png
-      description: A Biomimetic Soft Robotic System that Cognitively and Physically Assists Surgeons in Minimally Invasive Surgery
+      description: Innovation & Impacts
 ---
