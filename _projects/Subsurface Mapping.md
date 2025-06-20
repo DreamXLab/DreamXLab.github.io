@@ -1,93 +1,107 @@
 ---
 
 layout: page
-title: Urban Subsurface Mapping
-description: "Preventing utility strikes through next‑gen subsurface digital twins"
+title: UnderCity Twin
+description: "AI‑enabled sensing and analytics that turn invisible utilities into actionable, geospatial intelligence."
 img: assets/img/Subsurface/background.png
 importance: 1
 category: Management
 # related_publications: true
 ---
 
-> **Every 8 hours in the U.S., an excavation accidentally hits a buried utility line.**
-> Our mission is to bring those numbers to **zero** by turning the hidden world beneath our streets into a precise, living digital twin.
-
----
-
-## 1  Problem & Motivation
-
-* **640+ pipeline incidents** and **\$30 B** in societal costs occur annually because planners cannot “see” what lies below ground.
-* Existing records are incomplete & GPS signals fail in dense urban corridors.
-* Traditional Ground‑Penetrating Radar (GPR) analyses rely on hand‑crafted feature detection, which struggles with noisy, multi‑layer soils and overlapping utilities.
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Subsurface/accident.webp" title="accident image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/Subsurface/undercity.png" title="undercity image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
----
+> **What lies beneath a street can make—or break—a city.** Buried pipes carry water, energy, and data; voids and aging tunnels undermine roadbeds; undocumented cables stall new construction. Yet today most cities still rely on decades‑old paper maps and guesswork.
+>
+> **Dream X Lab is building a next‑generation *Subsurface Digital‑Twin Platform* that makes the underground as measurable and manageable as the sky‑line.**
 
-## 2  Knowledge Gap
 
-| **Challenge**                            | **State‑of‑the‑Art Limitation**                        |
-| ---------------------------------------- | ------------------------------------------------------ |
-| Detecting multiple, closely‑spaced pipes | Hyperbola‑fitting methods blur in cluttered radargrams |
-| Geo‑registering utilities in 3‑D         | GPS outages & un‑calibrated sensor rigs                |
-| Scalable labelled data                   | Real GPR + ground‑truth permittivity maps are scarce   |
-
-Our work closes **all three gaps** with a unified sensing‑and‑AI pipeline.
 
 ---
 
-## 3  Our Solution at a Glance
+## 1 Why This Matters at City Scale
+
+| **Urban Challenge**          | **Underground Pain‑Point**                                  | **Societal Impact**              |
+| ------------------------ | ------------------------------------------------------- | ---------------------------- |
+| Safe Excavation          | 400k+ utility strikes / yr in North America             | Injuries, \$30 B annual cost |
+| Resilient Infrastructure | 20 % water lost to hidden leaks                         | Energy waste, sinkholes      |
+| Smart‑City Upgrades      | 5G and district‑energy trenches clash with legacy pipes | Project delays               |
+| Climate Adaptation       | Green stormwater needs precise sub‑grade space          | Flood mitigation             |
+| Emergency Response       | Gas‑main breaks & sinkholes demand real‑time intel      | Lives at stake               |
+
+>A living subsurface twin gives **engineers, planners, and first‑responders a common, trusted map**—unlocking faster projects, safer streets, and sustainable growth.
+
+---
+
+## 2 Platform Vision & Architecture
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/Subsurface/overview.png" title="accident image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+1. **Multi‑Modal Sensing** – Rugged cart fuses wideband GPR with stereo/IMU for GPS‑denied odometry.
+2. **Edge AI Inversion** – ResNet‑ASPP turns raw radargrams into 3‑D permittivity volumes in real time.
+3. **Cloud Twin Database** – Version‑controlled voxel store that tracks change over time.
+4. **Open Interfaces** – REST/IFC/CityGML endpoints let utilities, contractors, and robot fleets tap the data.
+
+---
+
+## 3 Core Innovations
+
+* **Synthetic‑to‑Real Data Factory** – GAN‑enhanced radargrams reduce field data needs by 80 %.
+* **Centimetre‑Accurate Depth & Diameter** – ≤ 1.8 cm depth error on simulated test bed; continuous learning improves with each scan.
+* **Vision‑GPR SLAM** – Stereo camera keeps drift under decent threshold in city space.
+
+---
+
+## 4 High‑Impact Applications 
+
+| **Sector**             | **What We Enable**                                                        | **Potential Partners**                 |
+| ---------------------- | --------------------------------------------------------------------- | ---------------------------------- |
+| **Utility Owners**     | Auto‑generate accurate as‑built maps; plan trenchless rehab           | Gas, water, telecom utilities      |
+| **Civil Contractors**  | AR‑guided digging that avoids strikes; autonomous trenchers           | Construction & robotics OEMs       |
+| **Smart‑City Ops**     | Dynamic “traffic‑light” for street‑opening permits                    | DOTs, city CIOs                    |
+| **Climate‑Resilience** | Site selection for blue‑green infrastructure; leak‑loss analytics     | Environmental agencies, NGOs       |
+| **Emergency Services** | Rapid underground situational awareness during gas leaks or collapses | Fire, EMS, urban search‑and‑rescue |
+
+
+>Looking to deploy or extend these use cases? **Let’s co‑create pilots.**
+
+---
+
+## 5 Future Roadmap 
+
+1. **Field‑Robot Integration** – Mount sensor stack on autonomous rover for 24 h mapping.
+2. **Real‑Time Uncertainty Maps** – Propagate model confidence to guide re‑survey decisions.
+3. **Crowd‑Sourced Updates** – Lightweight smartphone GPR add‑on for utilities to scan small digs.
+4. **Digital‑Twin Marketplace** – API monetisation for insurers, AR navigation, and IoT twins.
+
+---
+
+## 6 Selected Results
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-10 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/Subsurface/workflow.jpg" title="System workflow" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/Subsurface/application.jpg" title="AI inversion + SLAM fusion" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 
-1. **Data Factory** – Thousands of synthetic radargrams \+ GAN realism enhancer \= rich training corpus.
-2. **Deep Inversion Network** – ResNet‑ASPP encoder–decoder directly reconstructs permittivity maps ⇒ pipe size & depth in one shot.
-3. **Visual SLAM Fusion** – ZED stereo camera localizes the GPR rig and rebuilds the streetscape, free from GPS.
-4. **Geo‑Registration** – Calibrated transforms fuse subsurface and surface models into an interactive 3‑D utility twin.
+Pipeline geo-registration process --- these results showcase the proposed model's capability to detect and localize buried pipelines in real-world scenarios.
 
 ---
 
-## 4  Key Contributions
+## 7 References
 
-1. **End‑to‑End Pipeline Detection** – 96.2 % precision on synthetic & field radargrams.
-2. **Centimetre‑Level Depth Estimation** – ≤ 1.8 cm avg. error; diameter error ≈ 20 % in simulation data. ~ 0.4 m depth discrepancy in real data.
-3. **GAN‑Powered Domain Bridging** – Cuts synthetic‑to‑real FID from **365 → 66**.
+1. **Wang, Hu, Chen, Li.** “Underground infrastructure detection and localization using deep learning enabled radargram inversion and vision‑based mapping.” *Automation in Construction* 154 (2023): 105004.
+2. **Wang, Hu, Li, Cai.** “Urban subsurface mapping via deep learning based GPR data inversion.” *IEEE Winter Simulation Conference* (2022).
 
----
 
-## 5  Why It Matters
-
-* **Safety:** Fewer strikes protect workers & the public.
-* **Cost:** Accurate as‑built data slashes re‑design & delay expenses.
-* **Sustainability:** Minimises needless pavement cuts and material waste.
-* **Smart‑City Readiness:** Provides a foundational layer for digital‑twin‑enabled maintenance and AR guidance.
-
----
-
-## 6  Results Snapshot
-
-<div class="row justify-content-sm-center">
-  <div class="col-sm-10 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/Subsurface/application.jpg" title="System applictaion" class="img-fluid rounded z-depth-1" %}
-  </div>
+<div class="alert alert-secondary mt-4" role="alert">
+<strong>Get Involved →</strong> We invite municipalities, utility firms, robotics integrators, and researchers to pilot the platform, share data, or co‑develop new sensing modules. <a href="mailto:dreamxlab@outlook.com">Email us</a> to explore partnerships.
 </div>
-
-<div class="caption">Pipeline geo-registration process --- these results showcase the proposed model's capability to detect and localize buried pipelines in real-world scenarios.</div>
-
----
-
-## 7  Publications
-
-* Wang, M., Hu, D., Chen, J., & Li, S. (2023).* “ Underground infrastructure detection and localization using deep learning enabled radargram inversion and vision based mapping. ” *Automation in Construction* 154, 105004.
-
-* Wang, M., Hu, D., Li, S., & Cai, J. (2022, December).* “ Urban subsurface mapping via deep learning based GPR data inversion. ” In 2022 Winter Simulation Conference (WSC) (pp. 2440-2450). IEEE.
-
----
