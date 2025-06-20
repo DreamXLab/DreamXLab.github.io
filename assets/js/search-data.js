@@ -90,9 +90,9 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Mixed%20Traffic/";
-            },},{id: "projects-urban-subsurface-mapping",
-          title: 'Urban Subsurface Mapping',
-          description: "Preventing utility strikes through next‑gen subsurface digital twins",
+            },},{id: "projects-undercity-twin",
+          title: 'UnderCity Twin',
+          description: "AI‑enabled sensing and analytics that turn invisible utilities into actionable, geospatial intelligence.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Subsurface%20Mapping/";
             },},{id: "projects-urban-air-mobility",
@@ -100,6 +100,16 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Urban%20Air%20Mobility/";
+            },},{id: "projects-ai-powered-construction-jobsite",
+          title: 'AI‑Powered Construction Jobsite',
+          description: "Integrating LLM‑guided robotic assembly with non‑intrusive audio emotion monitoring into a holistic digital‑twin jobsite pipeline.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/save-wmj/Manufacturing/";
+            },},{id: "projects-urban-subsurface-mapping",
+          title: 'Urban Subsurface Mapping',
+          description: "Preventing utility strikes through next‑gen subsurface digital twins",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/save-wmj/Subsurface%20Mapping/";
             },},{id: "projects-ai-copilot-in-surgery",
           title: 'AI Copilot in Surgery',
           description: "Redefine Surgery Intelligence",
