@@ -1,10 +1,10 @@
 ---
 layout: page
-title: 
-description: 
+title:
+description:
 img: assets/img/UAM_intro.png
 importance: 4
-category: fun
+category: Mobility
 ---
 
 <style>
@@ -71,9 +71,9 @@ category: fun
       <h2 style="margin: 0.3em 0; text-shadow: 2px 2px 8px rgba(0,0,0,0.7);">Flying into the Future</h2>
       <p style="margin: 0.3em 0; text-shadow: 2px 2px 8px rgba(0,0,0,0.7);">Safer, Faster, Cheaper, Quieter, Comforter</p>
     </div>
+
   </div>
 </div>
-
 
 ---
 
@@ -97,11 +97,10 @@ We imagine a future where cities use **eVTOL** aircraft for on-demand passenger 
   L.circleMarker(line[1], {radius: 6, color: 'green'}).addTo(map);
 </script>
 
-
-1. **Request flight** via app  
-2. **VTOL approaches** from nearest vertiport  
-3. **Passengers board**, safety checklist  
-4. **Vertical ascent**, cruise over city  
+1. **Request flight** via app
+2. **VTOL approaches** from nearest vertiport
+3. **Passengers board**, safety checklist
+4. **Vertical ascent**, cruise over city
 5. **Descent and landing** at destination vertiport
 
 ---
@@ -115,13 +114,13 @@ We imagine a future where cities use **eVTOL** aircraft for on-demand passenger 
   </div>
 </div> -->
 
-- 🎯 **Reduced ground congestion**  
-- 🕸 **Faster travel times** across urban areas  
+- 🎯 **Reduced ground congestion**
+- 🕸 **Faster travel times** across urban areas
 - 🌿 **Lower carbon emissions** and noise
 
 ---
 
 ## 📚 Learn more
 
-- [FAA on AAM](https://www.faa.gov/air-taxis) :contentReference[oaicite:1]{index=1}  
-- [Trajectory-Based Urban Air Mobility Simulator (TUS)](https://arxiv.org/abs/1908.08651) :contentReference[oaicite:2]{index=2}  
+- [FAA on AAM](https://www.faa.gov/air-taxis) :contentReference[oaicite:1]{index=1}
+- [Trajectory-Based Urban Air Mobility Simulator (TUS)](https://arxiv.org/abs/1908.08651) :contentReference[oaicite:2]{index=2}
