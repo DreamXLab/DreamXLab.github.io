@@ -1,5 +1,4 @@
 ---
-
 layout: page
 title: UnderCity Twin
 description: "AI‑enabled sensing and analytics that turn invisible utilities into actionable, geospatial intelligence."
@@ -17,15 +16,13 @@ category: Management
 
 > **What lies beneath a street can make—or break—a city.** Buried pipes carry water, energy, and data; voids and aging tunnels undermine roadbeds; undocumented cables stall new construction. Yet today most cities still rely on decades‑old paper maps and guesswork.
 >
-> **Dream X Lab is building a next‑generation *Subsurface Digital‑Twin Platform* that makes the underground as measurable and manageable as the sky‑line.**
-
-
+> **Dream X Lab is building a next‑generation _Subsurface Digital‑Twin Platform_ that makes the underground as measurable and manageable as the sky‑line.**
 
 ---
 
 ## 1 Why This Matters at City Scale
 
-| **Urban Challenge**          | **Underground Pain‑Point**                                  | **Societal Impact**              |
+| **Urban Challenge**      | **Underground Pain‑Point**                              | **Societal Impact**          |
 | ------------------------ | ------------------------------------------------------- | ---------------------------- |
 | Safe Excavation          | 400k+ utility strikes / yr in North America             | Injuries, \$30 B annual cost |
 | Resilient Infrastructure | 20 % water lost to hidden leaks                         | Energy waste, sinkholes      |
@@ -33,7 +30,7 @@ category: Management
 | Climate Adaptation       | Green stormwater needs precise sub‑grade space          | Flood mitigation             |
 | Emergency Response       | Gas‑main breaks & sinkholes demand real‑time intel      | Lives at stake               |
 
->A living subsurface twin gives **engineers, planners, and first‑responders a common, trusted map**—unlocking faster projects, safer streets, and sustainable growth.
+> A living subsurface twin gives **engineers, planners, and first‑responders a common, trusted map**—unlocking faster projects, safer streets, and sustainable growth.
 
 ---
 
@@ -54,15 +51,15 @@ category: Management
 
 ## 3 Core Innovations
 
-* **Synthetic‑to‑Real Data Factory** – GAN‑enhanced radargrams reduce field data needs by 80 %.
-* **Centimetre‑Accurate Depth & Diameter** – ≤ 1.8 cm depth error on simulated test bed; continuous learning improves with each scan.
-* **Vision‑GPR SLAM** – Stereo camera keeps drift under decent threshold in city space.
+- **Synthetic‑to‑Real Data Factory** – GAN‑enhanced radargrams reduce field data needs by 80 %.
+- **Centimetre‑Accurate Depth & Diameter** – ≤ 1.8 cm depth error on simulated test bed; continuous learning improves with each scan.
+- **Vision‑GPR SLAM** – Stereo camera keeps drift under decent threshold in city space.
 
 ---
 
-## 4 High‑Impact Applications 
+## 4 High‑Impact Applications
 
-| **Sector**             | **What We Enable**                                                        | **Potential Partners**                 |
+| **Sector**             | **What We Enable**                                                    | **Potential Partners**             |
 | ---------------------- | --------------------------------------------------------------------- | ---------------------------------- |
 | **Utility Owners**     | Auto‑generate accurate as‑built maps; plan trenchless rehab           | Gas, water, telecom utilities      |
 | **Civil Contractors**  | AR‑guided digging that avoids strikes; autonomous trenchers           | Construction & robotics OEMs       |
@@ -70,8 +67,7 @@ category: Management
 | **Climate‑Resilience** | Site selection for blue‑green infrastructure; leak‑loss analytics     | Environmental agencies, NGOs       |
 | **Emergency Services** | Rapid underground situational awareness during gas leaks or collapses | Fire, EMS, urban search‑and‑rescue |
 
-
->Looking to deploy or extend these use cases? **Let’s co‑create pilots.**
+> Looking to deploy or extend these use cases? **Let’s co‑create pilots.**
 
 ---
 
@@ -98,9 +94,8 @@ Pipeline geo-registration process --- these results showcase the proposed model'
 
 ## 7 References
 
-1. **Wang, Hu, Chen, Li.** “Underground infrastructure detection and localization using deep learning enabled radargram inversion and vision‑based mapping.” *Automation in Construction* 154 (2023): 105004.
-2. **Wang, Hu, Li, Cai.** “Urban subsurface mapping via deep learning based GPR data inversion.” *IEEE Winter Simulation Conference* (2022).
-
+1. **Wang, Hu, Chen, Li.** “Underground infrastructure detection and localization using deep learning enabled radargram inversion and vision‑based mapping.” _Automation in Construction_ 154 (2023): 105004.
+2. **Wang, Hu, Li, Cai.** “Urban subsurface mapping via deep learning based GPR data inversion.” _IEEE Winter Simulation Conference_ (2022).
 
 <div class="alert alert-secondary mt-4" role="alert">
 <strong>Get Involved →</strong> We invite municipalities, utility firms, robotics integrators, and researchers to pilot the platform, share data, or co‑develop new sensing modules. <a href="mailto:dreamxlab@outlook.com">Email us</a> to explore partnerships.
