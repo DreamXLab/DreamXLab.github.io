@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Flying DNA
-description: TBD
 img: /assets/img/fly/slide1.jpg
 importance: 1
 category: Mobility
