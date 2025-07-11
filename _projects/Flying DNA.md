@@ -2,12 +2,11 @@
 layout: page
 title: Flying DNA
 description: TBD
-img: /assets/img/UAM_intro.png
+img: /assets/img/fly/slide1.jpg
 importance: 1
 category: Mobility
 slides:
   list:
-    - url: /assets/img/fly/slide1.png
     - url: /assets/img/fly/slide2.png
     - url: /assets/img/fly/slide3.png
     - url: /assets/img/fly/slide4.png
