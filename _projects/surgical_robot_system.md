@@ -15,11 +15,10 @@ videos:
   list:
     - url: /assets/video/surgical/2nd.mp4
       title: Real World Demo
-      description: A Biomimetic Soft Robotic System that Cognitively and Physically Assists Surgeons in Minimally Invasive Surgery
+      description:
     - url: /assets/video/surgical/3rd.mp4
       title: Simulation Demo
-      description: A Biomimetic Soft Robotic System that Cognitively and Physically Assists Surgeons in Minimally Invasive Surgery
-
+      description:
 slides:
   list:
     - url: /assets/img/surgical/slide1.png

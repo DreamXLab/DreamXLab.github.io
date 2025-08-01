@@ -44,7 +44,7 @@ profiles:
     role: phd
     name: Shunyu Yao
     description: |
-      An AI researcher with a strong background in software engineering, his research interets include: 1. Vision–Language–Action (VLA) Models for Long-Horizon Action Planning and Autonomous 2. Navigation Deep Learning–Based 3D Computer Vision for Scene Reconstruction and Understanding
+      An AI researcher with a strong background in software engineering, his research interets include: 1. Vision–Language–Action (VLA) Models for Long-Horizon Action Planning and Autonomous Navigation. 2. 3D Computer Vision for Scene Reconstruction and Understanding
 
   - image: /assets/img/default_pic.png
     image_circular: false
