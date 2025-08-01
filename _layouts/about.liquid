@@ -51,16 +51,15 @@ layout: default
   <div class="clearfix">{{ content }}</div>
 
   <div style="height:1em"></div>
-   {% if page.recent_highlight and page.recent_highlight.content %}
-  <h3>Recent Highlights</h3>
-  <ul style="margin:0; padding:0; list-style-position:inside;">
-    <li>
-      I co-lead the Semiconductor X Space research thrust at University of Florida to advance next-generation sensors, actuators, and power systems
-      for space applications through cutting-edge semiconductor innovations.
-    </li>
-  </ul>
+  {% if page.recent_highlight and page.recent_highlight.content %}
+    <h3>Recent Highlights</h3>
+    <ul style="margin:0; padding:0; list-style-position:inside;">
+      <li>
+        I co-lead the Semiconductor X Space research thrust at University of Florida to advance next-generation sensors, actuators, and power systems
+        for space applications through cutting-edge semiconductor innovations.
+      </li>
+    </ul>
   {% endif %}
-
 
   <!-- AI Explorer -->
   {% if page.AI_Explorer and page.AI_Explorer.content %}

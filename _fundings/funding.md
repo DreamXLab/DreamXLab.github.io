@@ -227,15 +227,15 @@ We gratefully acknowledge the generous support from our sponsors and collaborato
                   | replace: '.', ''
                 }}.png"
               alt="{{ funder }} logo"
-              style="width:4em; height:auto;" />
+              style="width:8em; height:auto;" />
           </div>
 
           <div class="fund-content" style="flex:1 1 auto;">
             <p class="fund-title" style="margin:0 0 0.3em; font-weight:bold;">
-              “{{ item.title }}”
+              {{ item.title }}
             </p>
 
-            <p class="fund-period-role" style="margin:0 0.3em; color:#555;">
+            <p class="fund-period-role" style="margin:0; color:#555;">
               {{ item.period }}，{{ role }}
             </p>
 
@@ -250,9 +250,10 @@ We gratefully acknowledge the generous support from our sponsors and collaborato
           </div>
 
         </div>
-      </li>
         <div style="height:1em"></div>
        {% raw %}<hr>{% endraw %}
+      </li>
+
     {% endfor %}
 
   </ul>

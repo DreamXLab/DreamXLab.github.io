@@ -18,7 +18,7 @@ profiles:
     image_circular: false
     url: https://volweb2.utk.edu/~mwang43/
     role: phd
-    name: Mengjun Wang （王梦君）
+    name: Mengjun Wang
     description: |
       class Mengjun  
       {  
@@ -53,5 +53,3 @@ profiles:
     name: master student
     description: A master student working with xxx on xxx project
 ---
-
-asdadasdasd

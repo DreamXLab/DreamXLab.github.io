@@ -92,7 +92,7 @@ awards:
 
   .award-title {
     font-weight: bold;
-    font-size: 0.95rem; 
+    font-size: 1.5rem; 
     flex: 1 1 auto;  
   }
 
@@ -101,6 +101,7 @@ awards:
     font-style: italic;
     font-size: 0.9rem;
     flex: 0 0 auto;
+    text-align:right;
   }
 
   .award-year {
@@ -111,7 +112,7 @@ awards:
 
   .award-description {
     margin-top: 0.5rem;
-    text-indent: 1em;
+    /* text-indent: 1em; */
   }
 </style>
 
@@ -125,6 +126,8 @@ awards:
     <div style="height:1em"></div>
       <div class="award-header">
         <div class="award-title">{{ award.title }}</div>
+      </div>
+      <div>
         <div class="award-institution">{{ award.institution }}</div>
         <div class="award-year">{{ award.year }}</div>
       </div>
