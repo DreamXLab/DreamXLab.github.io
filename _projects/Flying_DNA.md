@@ -1,6 +1,8 @@
 ---
 layout: page
-img: /assets/img/fly/slide1.jpg
+title: Flying DNA
+description: AI-enabled flying ecosystem
+img: /assets/img/fly/title.jpg
 importance: 1
 category: Mobility&Manipulation
 slides:
