@@ -3,6 +3,11 @@ layout: page
 title: "Awards and Honors"
 permalink: /awards/award/
 awards:
+  - title: "Robotics/Automation Challenge Third Place"
+    institution: "American Society of Civil Engineers"
+    year: 2025
+    description: >
+      This award is presented to recognize our robotic AI agent that delivers in-situ guidance to frontline construction workers and enables real-time inspection on construction sites.
   - title: "Chancellor’s Innovation Fund Award"
     institution: "University of Tennessee Knoxville"
     year: 2024
