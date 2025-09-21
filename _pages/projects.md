@@ -10,7 +10,9 @@ horizontal: false
 ---
 
 <!-- pages/projects.md -->
-DREAM X Lab advances data science, robotics, environment transformation, AI, and manufacturing to create intelligent systems and use-inspired solutions that tackle humanity’s pressing challenges. 
+
+DREAM X Lab advances data science, robotics, environment transformation, AI, and manufacturing to create intelligent systems and use-inspired solutions that tackle humanity’s pressing challenges.
+
 <!-- DREAM X LAB conducts research in **D**igital **T**wins, **R**obotics, and **E**nvironment/**E**nergy/**E**cosystems—empowered by AI—to advance humanity and society through new paradigms of manufacturing, mobility&manipulation, and management. -->
 
 <div class="projects">
