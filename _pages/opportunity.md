@@ -30,17 +30,13 @@ nav_order: 6
   <p>We occasionally have openings for postdoctoral researchers with outstanding academic records and a strong alignment with our lab’s mission.</p>
 
   <p><strong>Funding Availability and Work Eligibility</strong></p>
-  Postdoc funding may be available on a competitive, case-by-case basis, depending on alignment with active or upcoming projects. Before applying, please verify your eligibility to work in the U.S. and in the State of Florida. Inquiries without this verification will not be considered. If eligible and interested, please email us with:
-  <ul>
-    <li>Your CV</li>
-    <li>A concise, well-articulated statement explaining how your track record and future research vision align with the core focus areas of our lab</li>
-  </ul>
+  Postdoc funding may be available on a competitive, case-by-case basis, depending on alignment with active or upcoming projects. Before applying, please verify your eligibility to work in the U.S. and in the State of Florida. Inquiries without this verification will not be considered. If eligible and interested, please email us with: (1) your CV; and (2) a concise, well-articulated statement explaining how your track record and future research vision align with the core focus areas of our lab.
 
   <p><strong>Qualifications</strong></p>
   We prioritize applicants who:
   <ul>
-    <li>Have a strong publication record in top-tier venues in AI and robotics</li>
-    <li>Have demonstrated experience in grant writing, project leadership, student mentorship, and effective collaboration within multidisciplinary teams</li>
+    <li>Have a strong publication record in top-tier venues in AI and robotics.</li>
+    <li>Have demonstrated experience in grant writing, project leadership, student mentorship, and effective collaboration within multidisciplinary teams.</li>
   </ul>
 
   <h4><strong>Ph.D. Students</strong></h4>
@@ -48,15 +44,15 @@ nav_order: 6
 
   <p><strong>Requirements:</strong></p>
   <ul>
-    <li>A master’s degree in a relevant field and strong research or technical background in AI, robotics, or the lab’s other core research areas</li>
-    <li>Proven programming skills and/or hands-on robotics experience</li>
-    <li>Publications in recognized venues are required/highly preferred for funded positions</li>
+    <li>A master’s degree in a relevant field and strong research or technical background in AI, robotics, or the lab’s other core research areas.</li>
+    <li>Proven programming skills and/or hands-on robotics experience.</li>
+    <li>Publications in recognized venues are required/highly preferred for funded positions.</li>
   </ul>
 
   <p><strong>Funding Policy:</strong></p>
   <ul>
     <li>Funding is highly competitive and awarded to outstanding candidates who meet the above requirements</li>
-    <li>Self-funded students with strong alignment and motivation will be considered. Future funding may be possible depending on student performance and lab resources—but is not guaranteed</li>
+    <li>Self-funded students with strong alignment and motivation will be considered. Future funding may be possible depending on student performance and lab resources, but is not guaranteed</li>
   </ul>
 
   <h4><strong>Master and Undergraduate Students</strong></h4>

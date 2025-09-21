@@ -54,6 +54,4 @@ I am a tenured Associate Professor at the University of Florida and the Director
 
 I have an interdisciplinary expertise and experience. I earned my Ph.D. degree in Civil Engineering from Purdue University in 2017, where I also received three M.S. degrees in Economics (2016), Industrial Engineering (2015), and Construction Engineering and Management (2014). My undergraduate studies were completed at Tianjin University, China, where I received dual B.S. degrees in Hydraulics and Hydroelectric Engineering and Project Management, both in 2012.
 
-I strive to contribute as an AI Explorer, deep tech Entrepreneur, Engineer and Economic consultant, as well as a dedicated Educator. I am committed to advancing use-inspired innovation and translating research into real-world impact through collaboration, mentorship, and technology-driven solutions.
-
 {% raw %}<hr>{% endraw %}
