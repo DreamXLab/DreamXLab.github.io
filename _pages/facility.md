@@ -70,7 +70,7 @@ nav_order: 9
     </div>
 
     <div class="asset-card">
-      <img src="/assets/img/robot.png"  alt="Compute Cards">
+      <img src="/assets/img/facilities/hipergator.jpg"  alt="Compute Cards">
       <h3>High-Performance Compute Cards</h3>
       <p>Latest GPUs and edge inference modules for training and deploying large-scale AI models.</p>
     </div>
