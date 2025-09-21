@@ -94,7 +94,7 @@ body{ margin:0; background:var(--bg); color:var(--fg); font-family:Inter,system-
 
   <section id="img2" class="a-reveal">
     <div class="media-block">
-      <img class="media" src="{{ '/assets/img/Immunology/slide3.gif' | relative_url }}" alt="Slide 3">
+      <img class="media" src="{{ 'assets/img/Immunology/slide3.gif' | relative_url }}" alt="Slide 3">
     </div>
   </section>
 
