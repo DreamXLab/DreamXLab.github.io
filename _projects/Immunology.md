@@ -75,6 +75,7 @@ body{ margin:0; background:var(--bg); color:var(--fg); font-family:Inter,system-
 </style>
 
 <canvas id="fx-bg" aria-hidden="true"></canvas>
+
 <div class="bg-gradient" aria-hidden="true"></div>
 
 <div class="page-wrap">
@@ -98,7 +99,6 @@ body{ margin:0; background:var(--bg); color:var(--fg); font-family:Inter,system-
     </div>
   </section>
 
-
   <!-- Publications (first 5 + button to show rest) -->
   <section class="refs a-reveal" id="publications">
     <h2>Publications</h2>
@@ -115,7 +115,7 @@ body{ margin:0; background:var(--bg); color:var(--fg); font-family:Inter,system-
       <li>Cao, L., Yang, L., Swanson, C. S., Li, S., & He, Q. (2021). Comparative analysis of impact of human occupancy on indoor microbiomes. Frontiers of Environmental Science & Engineering, 15(5), 89.
       </li>
 
-      
+
     </ul>
 
     <ul class="refs-more" id="refs-more" hidden>
@@ -129,6 +129,7 @@ body{ margin:0; background:var(--bg); color:var(--fg); font-family:Inter,system-
     <div class="btn-row">
       <button class="btn" id="toggle-refs" aria-expanded="false" aria-controls="refs-more">Show full list</button>
     </div>
+
   </section>
 
   <!-- guaranteed extra space at the very bottom -->
@@ -210,7 +211,6 @@ const c = document.getElementById('fx-bg'); if(c){
   });
 }
 </script>
-
 
 <style>
 /* ===== FORCE WHITE IN PUBLICATIONS (beats daylight overrides) ===== */

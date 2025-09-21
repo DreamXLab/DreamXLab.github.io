@@ -4,7 +4,6 @@ title: Aftermath Atlas
 description: "AI Drones, Instant Insights, Smarter Recovery Decisions"
 category: Management
 img: /assets/img/Aftermath/title.png
-
 ---
 
 <style>
@@ -75,6 +74,7 @@ body{ margin:0; background:var(--bg); color:var(--fg); font-family:Inter,system-
 </style>
 
 <canvas id="fx-bg" aria-hidden="true"></canvas>
+
 <div class="bg-gradient" aria-hidden="true"></div>
 
 <div class="page-wrap">
@@ -119,7 +119,7 @@ body{ margin:0; background:var(--bg); color:var(--fg); font-family:Inter,system-
       <li>Li, S., Moslehy, A., Hu, D., Wang, M., Wierschem, N., Alshibli, K., & Huang, B. (2022). Drones and other technologies to assist in disaster relief efforts (No. RES2021-05). Tennessee. Department of Transportation.</li>
       <li>Chen, J., Li, S., Liu, D., & Li, X. (2020). AiRobSim: Simulating a multisensor aerial robot for urban search and rescue operation and training. Sensors, 20(18), 5223.
       </li>
-      
+
     </ul>
 
     <ul class="refs-more" id="refs-more" hidden>
@@ -128,6 +128,7 @@ body{ margin:0; background:var(--bg); color:var(--fg); font-family:Inter,system-
     <div class="btn-row">
       <button class="btn" id="toggle-refs" aria-expanded="false" aria-controls="refs-more">Show full list</button>
     </div>
+
   </section>
 
   <!-- guaranteed extra space at the very bottom -->
@@ -209,7 +210,6 @@ const c = document.getElementById('fx-bg'); if(c){
   });
 }
 </script>
-
 
 <style>
 /* ===== FORCE WHITE IN PUBLICATIONS (beats daylight overrides) ===== */

@@ -74,10 +74,10 @@ body{ margin:0; background:var(--bg); color:var(--fg); font-family:Inter,system-
 </style>
 
 <canvas id="fx-bg" aria-hidden="true"></canvas>
+
 <div class="bg-gradient" aria-hidden="true"></div>
 
 <div class="page-wrap">
-
 
   <!-- Your media -->
   <section id="img1" class="a-reveal">
@@ -122,6 +122,7 @@ body{ margin:0; background:var(--bg); color:var(--fg); font-family:Inter,system-
     <div class="btn-row">
       <button class="btn" id="toggle-refs" aria-expanded="false" aria-controls="refs-more">Show full list</button>
     </div>
+
   </section>
 
   <!-- guaranteed extra space at the very bottom -->
@@ -202,7 +203,6 @@ const c = document.getElementById('fx-bg'); if(c){
   });
 }
 </script>
-
 
 <style>
 /* ===== FORCE WHITE IN PUBLICATIONS (beats daylight overrides) ===== */
