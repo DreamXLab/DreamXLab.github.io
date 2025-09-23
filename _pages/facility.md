@@ -59,7 +59,7 @@ nav_order: 9
 </style>
 
 <div class="facility-page">
-  <h1>Our Laboratory Assets</h1>
+
   <p class="intro">Explore the state-of-the-art equipment that powers our research in AI, robotics, and human–computer interaction.</p>
 
   <div class="assets-grid">
