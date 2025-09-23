@@ -2,6 +2,9 @@
 layout: page
 permalink: /fundings/funding
 title: Funded Projects
+filter_tags:
+  - "National Science Foundation"
+  - "Robotics & AI"
 funding:
   - title: "AI Embodied Biomimetic Soft Robot for Superior Vision in Minimally Invasive Surgery"
     period: "10/01/2025 – 09/30/2028"
@@ -154,65 +157,167 @@ funding:
       - "PI"
       - "External Grants and Contracts"
       - "Tennessee Department of Transportation"
+  # - title: "Toward Precision Environmental Health Risk Management: Feasibility of Personalized Exposome Monitoring"
+  #   period: "01/2021 – 12/2021"
+  #   amount: "$45,000"
+  #   categories:
+  #     - "Co-PI"
+  #     - "University of Tennessee Knoxville"
+  #     - "Internal Funding"
+  #     - "Robotics & AI"
+  # - title: "Feasibility of Personalized Monitoring of Environmental Exposomes toward Prevention of Alzheimer’s Disease and Related Dementia"
+  #   period: "01/2021 – 8/2021"
+  #   amount: "$5,000"
+  #   categories:
+  #     - "Co-PI"
+  #     - "University of Tennessee"
+  #     - "Internal Funding"
+  # - title: "Artificial Intelligence Aided 3D Metagenomic Mapping of Built Environments and Humans to Model Pathogen Transmission"
+  #   period: "08/2020 – 07/2022"
+  #   amount: "$149,331"
+  #   categories:
+  #     - "PI"
+  #     - "University of Tennessee Oak Ridge Innovation Institute"
+  #     - "Internal Funding"
+  #     - "Robotics & AI"
+  # - title: "Pathogen Transmission Pathway Identification by Fomite and Behavior Monitoring"
+  #   period: "08/2020 – 07/2022"
+  #   amount: "$47,000"
+  #   categories:
+  #     - "Co-PI"
+  #     - "University of Tennessee"
+  #     - "Internal Funding"
+  #     - "Robotics & AI"
+  # - title: "Trust-Aware Human-Robot Interface for Occluded and Uncertain Space Search"
+  #   period: "05/2019 – 6/2020"
+  #   amount: "$69,962"
+  #   categories:
+  #     - "PI"
+  #     - "University of Tennessee Knoxville"
+  #     - "Internal Funding"
+  #     - "Robotics & AI"
+  # - title: "Visibility Enhancement for Autonomous Construction Machines Based on Prediction"
+  #   period: "01/2018 – 05/2018"
+  #   amount: "$2,000"
+  #   categories:
+  #     - "PI"
+  #     - "University of Tennessee Knoxville"
+  #     - "Internal Funding"
+  #     - "Robotics & AI"
 ---
 
 <div class="post">
+
 {% assign records = page.funding %}
+
 We gratefully acknowledge the generous support from our sponsors and collaborators. We are excited about opportunities for research collaborations, joint proposal development, and strategic partnerships that advance scientific discovery, foster innovation, and create meaningful societal impact.
 
-<div style="height:2em"></div>
-<ul id="fund-list" style="list-style: none; padding-left: 0;">
-  {% for item in records %}
-    {% assign role = item.categories
-        | where_exp: "c", "c == 'PI' or c == 'Co-PI' or c == 'Senior Personnel'"
-        | first %}
+{% assign all_cats = records | map: "categories" | flatten | uniq | sort %}
 
-    {% assign funders = item.categories
-        | where_exp: "c",
-            "c != 'External Grants and Contracts'
-             and c != 'Internal Funding'
-             and c != 'PI'
-             and c != 'Co-PI'
-             and c != 'Senior Personnel'" %}
-    {% assign funder = funders | first %}
-    <li>
-    <div style="height:1em"></div>
-      <div class="fund-entry" style="display:flex; align-items:flex-start; gap:1em; margin-bottom:1.5em;">
-        <!-- logo -->
-        <div class="fund-logo" style="flex:0 0 auto;">
-          <img
-            src="/assets/logos/{{ funder
-                | downcase
-                | replace: ' ', '-'
-                | replace: ',', ''
-                | replace: '(', ''
-                | replace: ')', ''
-                | replace: '.', ''
-              }}.png"
-            alt="{{ funder }} logo"
-            style="width:8em; height:auto;" />
-        </div>
-        <div class="fund-content" style="flex:1 1 auto;">
-          <p class="fund-title" style="margin:0 0 0.3em; font-weight:bold;">
-            {{ item.title }}
-          </p>
-          <p class="fund-period-role" style="margin:0; color:#555;">
-            {{ item.period }}，{{ role }}
-          </p>
-          <p class="fund-funder-amount" style="margin:0; color:#333;">
-            {{ funder }}
-            {% if funder contains 'National Science Foundation' %}(NSF){% endif %}
-            {% if funder contains 'Department of Energy' %}(DOE){% endif %}
-            {% if funder contains 'Office of Naval Research' %}(ONR){% endif %}
-            · {{ item.amount }}
-          </p>
-        </div>
-      </div>
+{% assign all_cats = page.funding | map: "categories" | flatten | uniq | sort %}
+
+<div class="tag-category-list">
+  <ul>
+    <li><a href="#" data-cat="all">All</a></li>
+    {% for tag in page.filter_tags %}
+      {% if all_cats contains tag %}
+        <li>
+          <a href="#" data-cat="{{ tag | escape }}">{{ tag }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+    <div style="height:2em"></div>
+
+  <ul id="fund-list">
+    {% for item in records %}
+
+      {% assign role = item.categories
+          | where_exp: "c", "c == 'PI' or c == 'Co-PI' or c == 'Senior Personnel'"
+          | first %}
+
+
+
+      {% assign funders = item.categories
+          | where_exp: "c",
+              "c != 'External Grants and Contracts'
+               and c != 'Internal Funding'
+               and c != 'PI'
+               and c != 'Co-PI'
+               and c != 'Senior Personnel'" %}
+      {% assign funder = funders | first %}
+
+      <li data-cats='{{ item.categories | jsonify }}'>
       <div style="height:1em"></div>
-     {% raw %}<hr>{% endraw %}
-    </li>
+        <div class="fund-entry" style="display:flex; align-items:flex-start; gap:1em; margin-bottom:1.5em;">
 
-{% endfor %}
+          <!-- logo -->
+          <div class="fund-logo" style="flex:0 0 auto;">
+            <img
+              src="/assets/logos/{{ funder
+                  | downcase
+                  | replace: ' ', '-'
+                  | replace: ',', ''
+                  | replace: '(', ''
+                  | replace: ')', ''
+                  | replace: '.', ''
+                }}.png"
+              alt="{{ funder }} logo"
+              style="width:8em; height:auto;" />
+          </div>
 
-</ul>
+          <div class="fund-content" style="flex:1 1 auto;">
+            <p class="fund-title" style="margin:0 0 0.3em; font-weight:bold;">
+              {{ item.title }}
+            </p>
+
+            <p class="fund-period-role" style="margin:0; color:#555;">
+              {{ item.period }}，{{ role }}
+            </p>
+
+            <p class="fund-funder-amount" style="margin:0; color:#333;">
+              {{ funder }}
+              {% if funder contains 'National Science Foundation' %}(NSF){% endif %}
+              {% if funder contains 'Department of Energy' %}(DOE){% endif %}
+              {% if funder contains 'Office of Naval Research' %}(ONR){% endif %}
+              · {{ item.amount }}
+            </p>
+
+          </div>
+
+        </div>
+        <div style="height:1em"></div>
+       {% raw %}<hr>{% endraw %}
+      </li>
+
+    {% endfor %}
+
+  </ul>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const listItems = document.querySelectorAll('#fund-list > li');
+    const tagLinks  = document.querySelectorAll('.tag-category-list a');
+    function showCat(catRaw) {
+      const cat = catRaw.trim();
+      listItems.forEach(el => {
+        let cats = [];
+        try {
+          cats = JSON.parse(el.getAttribute('data-cats')).map(c => c.trim());
+        } catch (e) {}
+        const match = (cat === 'all' || cats.includes(cat));
+        el.style.display = match ? 'block' : 'none';
+      });
+    }
+    tagLinks.forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        showCat(link.getAttribute('data-cat'));
+      });
+    });
+    showCat('all');
+  });
+  </script>
+
 </div>
