@@ -8,7 +8,7 @@ category: Mobility&Manipulation
 slides:
   order:
     - url: /assets/img/seethrough_Robots/slide1.jpg
-    - url: /assets/img/seethrough_Robots/slide2.jpg
+    - url: /assets/img/seethrough_Robots/Slide2.jpg
 ---
 
 <!-- 遍历所有 slides -->
