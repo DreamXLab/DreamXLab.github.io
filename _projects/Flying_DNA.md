@@ -13,7 +13,6 @@ slides:
     - url: /assets/img/fly/slide4.jpg
     - url: /assets/img/fly/slide_3.gif
     - url: /assets/img/fly/slide6.gif
-    - url: /assets/img/fly/slide6.png
 ---
 
 <!-- 遍历所有 slides -->
