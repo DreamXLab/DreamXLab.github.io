@@ -1,7 +1,7 @@
 ---
 layout: page
 title: See-Through Robots
-description: Research on see-through robots for disaster response
+description: Robots team with first responders, see through rubble, and deliver life-saving intelligence
 img: /assets/img/seethrough_Robots/slide1.jpg
 importance: 1
 category: Mobility&Manipulation
@@ -37,3 +37,22 @@ slides:
     </div>
 
   </section>
+
+<style>
+  body {
+    background-color: #ffffff !important;  /* 强行设置为白色 */
+  }
+</style>
+
+<style>
+  h1 {
+    font-family: Arial, sans-serif !important;
+    font-size: 32px !important;
+  }
+
+  p.description {
+    font-family: Arial, sans-serif !important;
+    font-size: 24px !important;
+  }
+</style>
+
