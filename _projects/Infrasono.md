@@ -9,7 +9,7 @@ img: /assets/img/Subsurface/title.png
 <style>
 :root{ --fg:#fff; --muted:#cfd6e6; --bg:#0a0e17; }
 html,body{height:100%}
-body{ margin:0; background:var(--bg); color:var(--fg); font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif; }
+body{ margin:0; background:var(--bg); color:var(--fg); font-family:Arial,sans-serif; }
 
 /* background (optional) */
 #fx-bg{position:fixed; inset:0; z-index:-1}
@@ -82,7 +82,7 @@ body{ margin:0; background:var(--bg); color:var(--fg); font-family:Inter,system-
   <!-- Your media -->
   <section id="img1" class="a-reveal">
     <div class="media-block">
-      <img class="media" src="{{ '/assets/img/Subsurface/slide2.gif' | relative_url }}" alt="Slide 2">
+      <img class="media" src="{{ '/assets/img/Subsurface/slide2.png' | relative_url }}" alt="Slide 2">
     </div>
   </section>
 
@@ -205,6 +205,8 @@ const c = document.getElementById('fx-bg'); if(c){
 </script>
 
 <style>
+
+
 /* ===== FORCE WHITE IN PUBLICATIONS (beats daylight overrides) ===== */
 /* 把 refs 区域里所有文字（含 em/i/a/span/strong 等）都锁成白色 */
 .refs,
