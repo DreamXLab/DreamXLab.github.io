@@ -55,4 +55,3 @@ slides:
     font-size: 24px !important;
   }
 </style>
-
