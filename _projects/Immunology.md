@@ -77,11 +77,11 @@ header .page-subtitle {
 
   <!-- Slides -->
   <section class="media-block">
-    <img class="media" src="{{ '/assets/img/Immunology/Slide1.png' | relative_url }}" alt="Slide 1">
+    <img class="media" src="{{ '/assets/img/Immunology/slide1.PNG' | relative_url }}" alt="Slide 1">
   </section>
 
   <section class="media-block">
-    <img class="media" src="{{ '/assets/img/Immunology/Slide2.png' | relative_url }}" alt="Slide 2">
+    <img class="media" src="{{ '/assets/img/Immunology/slide2.PNG' | relative_url }}" alt="Slide 2">
   </section>
 
   <section class="media-block">

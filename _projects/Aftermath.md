@@ -76,19 +76,19 @@ header .page-subtitle {
 
   <!-- Slides -->
   <section class="media-block">
-    <img class="media" src="{{ '/assets/img/Aftermath/Slide1.png' | relative_url }}" alt="Slide 1">
+    <img class="media" src="{{ '/assets/img/Aftermath/Slide1.PNG' | relative_url }}" alt="Slide 1">
   </section>
 
   <section class="media-block">
-    <img class="media" src="{{ '/assets/img/Aftermath/Slide2.png' | relative_url }}" alt="Slide 2">
+    <img class="media" src="{{ '/assets/img/Aftermath/Slide2.PNG' | relative_url }}" alt="Slide 2">
   </section>
 
   <section class="media-block">
-    <img class="media" src="{{ '/assets/img/Aftermath/Slide3.png' | relative_url }}" alt="Slide 3">
+    <img class="media" src="{{ '/assets/img/Aftermath/Slide3.PNG' | relative_url }}" alt="Slide 3">
   </section>
 
   <section class="media-block">
-    <img class="media" src="{{ '/assets/img/Aftermath/Slide4.png' | relative_url }}" alt="Slide 4">
+    <img class="media" src="{{ '/assets/img/Aftermath/Slide4.PNG' | relative_url }}" alt="Slide 4">
   </section>
 
   <section class="media-block">
