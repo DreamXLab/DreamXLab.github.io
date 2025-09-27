@@ -84,11 +84,11 @@ header .page-subtitle {
   </section>
 
   <section class="media-block">
-    <img class="media" src="{{ '/assets/img/Aftermath/slide4.png' | relative_url }}" alt="Slide 3">
+    <img class="media" src="{{ '/assets/img/Aftermath/slide3.png' | relative_url }}" alt="Slide 3">
   </section>
 
   <section class="media-block">
-    <img class="media" src="{{ '/assets/img/Aftermath/slide5.pngG' | relative_url }}" alt="Slide 4">
+    <img class="media" src="{{ '/assets/img/Aftermath/slide4.png' | relative_url }}" alt="Slide 4">
   </section>
 
   <section class="media-block">
