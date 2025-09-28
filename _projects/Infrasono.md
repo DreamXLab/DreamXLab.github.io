@@ -1,7 +1,7 @@
 ---
 layout: page
 title: InfraSono
-description: "Perform AI-Powered Robotic Sonography on Infrastructure"
+description: "Robots Perform AI Sonography on Infrastructure Systems"
 category: Management
 img: /assets/img/Subsurface/title.png
 ---

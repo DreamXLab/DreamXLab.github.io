@@ -3,7 +3,7 @@ layout: page
 title: Building Immunology
 category: Management
 img: /assets/img/Immunology/title.png
-description: "Smart Building For Better Humanity in Health, Energy And Preference"
+description: "AI-based Immune Systems Protect You and Your Loved Ones in Buildings."
 ---
 
 <style>
@@ -168,28 +168,6 @@ if(c){
 
   const pts = Array.from({length:N},()=>({ x:Math.random()*W, y:Math.random()*H, vx:(Math.random()-0.5)*0.4, vy:(Math.random()-0.5)*0.4 }));
 
-  function step(){
-    ctx.clearRect(0,0,W,H);
-    for(const p of pts){
-      p.x+=p.vx; p.y+=p.vy;
-      if(p.x<0||p.x>W) p.vx*=-1;
-      if(p.y<0||p.y>H) p.vy*=-1;
-      ctx.beginPath(); ctx.arc(p.x,p.y,1.5,0,Math.PI*2);
-      ctx.fillStyle = `rgba(${rgb},0.95)`; ctx.fill();
-    }
-    for(let i=0;i<pts.length;i++){
-      for(let j=i+1;j<pts.length;j++){
-        const dx=pts[i].x-pts[j].x, dy=pts[i].y-pts[j].y, d2=dx*dx+dy*dy;
-        if(d2<110*110){
-          const alpha = Math.max(0, 0.42*(1 - d2/12100));
-          ctx.strokeStyle = `rgba(${rgb},${alpha})`;
-          ctx.beginPath(); ctx.moveTo(pts[i].x,pts[i].y); ctx.lineTo(pts[j].x,pts[j].y); ctx.stroke();
-        }
-      }
-    }
-    requestAnimationFrame(step);
-  }
-  step();
 
   addEventListener('resize', ()=>{ W = innerWidth; H = innerHeight; DPR = Math.min(2, devicePixelRatio||1); sizeCanvas(); });
 }
