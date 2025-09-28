@@ -47,16 +47,26 @@ slides:
   body {
     background-color: #000000 !important;  /* 黑色背景 */
   }
-</style>
 
-<style>
+  /* Title (h1) */
   h1 {
     font-family: Arial, sans-serif !important;
     font-size: 32px !important;
+    color: #ffffff !important;  /* 白色字体 */
   }
 
+  /* Description */
   p.description {
     font-family: Arial, sans-serif !important;
     font-size: 24px !important;
+    color: #ffffff !important;  /* 白色字体 */
+  }
+
+  /* Publications / refs */
+  section.refs, 
+  section.refs h2,
+  section.refs ul,
+  section.refs li {
+    color: #ffffff !important;  /* 白色字体 */
   }
 </style>
