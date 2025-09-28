@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Flying DNA
-description: Flying DNA integrates Digital Twin, Networked Systems, and Artificial Intelligence to create virtual replicas, connect agents and infrastructure, and enable intelligent design and optimization
+description: Digital Twin + Networked System + AI (DNA) Reshape Future Air Mobility.
 img: /assets/img/fly/title.jpg
 importance: 1
 category: Mobility&Manipulation
