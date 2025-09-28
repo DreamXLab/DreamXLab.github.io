@@ -69,4 +69,11 @@ slides:
   section.refs li {
     color: #ffffff !important;  /* 白色字体 */
   }
+
+  /* 去掉引用的 bullet point */
+  section.refs ul {
+    list-style-type: none;   /* 去掉小圆点 */
+    padding-left: 0;         /* 去掉左边缩进 */
+    margin-left: 0;          /* 去掉额外空白 */
+  }
 </style>
