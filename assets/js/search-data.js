@@ -56,7 +56,7 @@ ninja.data = [{
               window.location.href = "/fundings/funding";
             },},{id: "projects-aftermath-atlas",
           title: 'Aftermath Atlas',
-          description: "AI-powered Drones Help Make Faster and Smarter Aftermath Recovery Decisions",
+          description: "Aerial Robotic AI Agents Provide Real-Time Post-Disaster Intelligence",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Aftermath/";
             },},{id: "projects-flying-dna",
@@ -66,12 +66,12 @@ ninja.data = [{
               window.location.href = "/projects/Flying_DNA/";
             },},{id: "projects-building-immunology",
           title: 'Building Immunology',
-          description: "Smart Building For Better Humanity in Health, Energy And Preference",
+          description: "AI-based Immune Systems Protect You and Your Loved Ones in Buildings.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Immunology/";
             },},{id: "projects-infrasono",
           title: 'InfraSono',
-          description: "Perform AI-Powered Robotic Sonography on Infrastructure",
+          description: "Robots Perform AI Sonography on Infrastructure Systems",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Infrasono/";
             },},{id: "projects-see-through-robots",
