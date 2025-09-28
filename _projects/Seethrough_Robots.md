@@ -1,7 +1,7 @@
 ---
 layout: page
 title: See-Through Robots
-description: Robots team with first responders, see through rubble, and deliver life-saving intelligence
+description: Endowing Robots with AI-Based See-Through Capabilities To Save Lives and Sense Hidden Hazards
 img: /assets/img/seethrough_Robots/slide1.jpg
 importance: 1
 category: Mobility&Manipulation
