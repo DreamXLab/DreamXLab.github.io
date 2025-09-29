@@ -23,86 +23,65 @@ slides:
   </div>
 {% endfor %}
 
-<!-- Publications (first 5 + button to show rest) -->
+<!-- Publications -->
 <section class="refs a-reveal" id="publications">
   <h2>Publications</h2>
 
   <ul class="refs-list">
-    <li>Liu, S., Li, S., Li, H., Li, W., & Tan, J. (2024). TEeVTOL: Balancing Energy and Time Efficiency in eVTOL Aircraft Path Planning Across City-Scale Wind Fields. arXiv preprint arXiv:2403.14877.</li>
-    <li>Liu, S., Li, W., Li, H., & Li, S. (2025). Reinforcement learning based multi-perspective motion planning of manned electric vertical take-off and landing vehicle in urban environment with wind fields. Engineering Applications of Artificial Intelligence, 149, 110392.</li>
+    <li>Liu, S., Li, S., Li, H., Li, W., & Tan, J. (2024). TEeVTOL: Balancing Energy and Time Efficiency in eVTOL Aircraft Path Planning Across City-Scale Wind Fields. <em>arXiv preprint</em> arXiv:2403.14877.</li>
+    <li>Liu, S., Li, W., Li, H., & Li, S. (2025). Reinforcement learning based multi-perspective motion planning of manned electric vertical take-off and landing vehicle in urban environment with wind fields. <em>Engineering Applications of Artificial Intelligence</em>, 149, 110392.</li>
   </ul>
-
-  <ul class="refs-more" id="refs-more" hidden>
-  </ul>
-
-  <div class="btn-row">
-    <button class="btn" id="toggle-refs" aria-expanded="false" aria-controls="refs-more">Show full list</button>
-  </div>
 </section>
 
 <style>
-  body {
-    background-color: #000000 !important;  /* 黑色背景 */
-  }
+:root { --fg:#fff; --bg:#000; }
 
-  /* Title (h1) */
-  h1 {
-    font-family: Arial, sans-serif !important;
-    font-size: 32px !important;
-    color: #ffffff !important;  /* 白色字体 */
-    text-align: center !important; /* 居中 */
-  }
+body {
+  margin:0;
+  background:var(--bg);
+  color:var(--fg);
+  font-family: Arial, sans-serif;
+}
 
-  /* Description（兼容不同主题 class） */
-  p.description,
-  .page__lead,
-  .page-description,
-  header .page__lead,
-  header .page-description {
-    font-family: Arial, sans-serif !important;
-    font-size: 24px !important;
-    color: #ffffff !important;   /* 强制白色 */
-    text-align: center !important; /* 居中 */
-    margin: 1rem auto !important;  /* 上下留白，自动左右居中 */
-    max-width: 900px !important;   /* 限制宽度 */
-    display: block !important;
-  }
+/* Title + Description 居中 + 放大字号 */
+.page__lead,
+.page-description,
+.page-subtitle,
+header .page__lead,
+header .page-description,
+header .page-subtitle,
+h1,
+p.description {
+  display: block !important;
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  font-size: 1.8em !important;   /* description 基准字号 */
+  line-height: 1.5 !important;
+  color: var(--fg) !important;
+  width: 100% !important;
+}
 
-  /* Publications / refs */
-  section.refs, 
-  section.refs h2,
-  section.refs ul,
-  section.refs li {
-    color: #ffffff !important;  /* 白色字体 */
-  }
+/* Title 单独放大 */
+h1 {
+  font-size: 3.6em !important;   /* 比 description 大三个字号 */
+}
 
-  /* 去掉引用的 bullet point */
-  section.refs ul {
-    list-style-type: none;   /* 去掉小圆点 */
-    padding-left: 0;         
-    margin-left: 0;          
-  }
+/* Publications / refs */
+.refs h2 {
+  color: var(--fg) !important;
+  font-size: 1.5em !important;
+  text-align: left;
+}
+.refs-list, .refs-more {
+  list-style: none !important;   /* 去掉小圆点 */
+  padding-left: 0 !important;
+  margin: 12px 0;
+}
+.refs-list li, .refs-more li {
+  color: var(--fg) !important;
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 10px 0;
+}
 </style>
-
-<script>
-/* 运行时强制锁定 Title 和 Description 样式 */
-(function(){
-  const wantTitle = {{ page.title | jsonify }};
-  const wantDesc  = {{ page.description | jsonify }};
-
-  function lockCenterByText(txt){
-    if(!txt) return;
-    const all = document.querySelectorAll('h1,h2,h3,p,small,span,div');
-    const el = Array.from(all).find(n => n.textContent && n.textContent.trim() === String(txt).trim());
-    if(!el) return;
-    el.style.setProperty('text-align','center','important');
-    el.style.setProperty('margin-left','auto','important');
-    el.style.setProperty('margin-right','auto','important');
-    el.style.setProperty('display','block','important');
-    el.style.setProperty('color','white','important');
-  }
-
-  lockCenterByText(wantTitle);
-  lockCenterByText(wantDesc);
-})();
-</script>
