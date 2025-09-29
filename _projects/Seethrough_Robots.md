@@ -58,10 +58,15 @@ p.description {
   text-align: center !important;
   margin-left: auto !important;
   margin-right: auto !important;
-  font-size: 1.8em !important;  /* 放大字号 */
+  font-size: 1.8em !important;  /* Description 基准大小 */
   line-height: 1.5 !important;
   color: var(--fg) !important;
   width: 100% !important;
+}
+
+/* Title 单独放大 */
+h1 {
+  font-size: 2.4em !important;  /* 比 description 大三个字号 */
 }
 
 /* Publications / refs */
@@ -82,3 +87,4 @@ p.description {
   margin: 10px 0;
 }
 </style>
+
