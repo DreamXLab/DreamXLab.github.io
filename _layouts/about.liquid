@@ -114,41 +114,28 @@ layout: default
     </section>
   {% endif %}
 
-  <div style="height:1em"></div>
-  {% if page.Educator and page.Educator.enabled %}
-    <section>
-      <h3>Engineering Educator</h3>
-      <div>
-        {{ page.Educator.content }}
-      </div>
-    </section>
-  {% endif %}
+  <section>
+    <strong>AI Explorer</strong>. I am committed to advancing use-inspired innovation and translating research into real-world impact through
+    collaboration, mentorship, and technology-driven solutions. My work focuses on multidisciplinary research in AI and robotics to create intelligent
+    systems that <strong>augment, collaborate with, challenge, educate, serve, and steward (ACCESS) humanity</strong>. My goal is to develop AI that
+    reshapes how we live, work, learn, and govern, bridging research with real-world transformation. <strong>Augment</strong> – AI enhances human
+    cognitive, physical, and creative abilities, enabling performance beyond natural limits. <strong>Collaborate</strong> – AI co-decides and co-acts
+    with humans to tackle complex, real-world tasks. <strong>Challenge</strong> – AI provokes new thinking by questioning assumptions, disrupting
+    outdated norms, and revealing novel opportunities for societal evolution. <strong>Educate</strong> – AI personalizes learning and feedback,
+    scaling training and accelerating skill development. <strong>Serve</strong> – AI takes on essential, dull, dirty, and dangerous tasks, freeing
+    humans to focus on higher-value and more meaningful pursuits. <strong>Steward</strong> – AI governs and optimizes systems to align with human
+    values, promoting health, safety, security, and long-term societal well-being.
+  </section>
 
-  <!-- News -->
-  {% if page.announcements and page.announcements.enabled %}
-    <h2>
-      <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-    </h2>
-    {% include news.liquid limit=true %}
-  {% endif %}
+  <br>
 
-  <!-- Latest posts -->
-  {% if page.latest_posts and page.latest_posts.enabled %}
-    <h2>
-      <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-    </h2>
-    {% include latest_posts.liquid %}
-  {% endif %}
-
-  <!-- Selected papers -->
-  {% if page.selected_papers %}
-    <h2>
-      <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-    </h2>
-    {% include selected_papers.liquid %}
-  {% endif %}
-
-  {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
-    {% include newsletter.liquid center=true %}
-  {% endif %}
+  <section>
+    <strong>Engineer Educator</strong>. Engineering Educator. Civil engineering and construction is far more than it is often perceived to be “digging
+    dirt,” “pouring concrete,” or “counting traffic.” It encompasses every dimension of what, where, and how we inhabit, sustain, and evolve life on
+    Earth and beyond in daily life and under extreme conditions. It is a discipline fundamentally rooted in service to humanity and the advancement of
+    civilization. As an educator, I view teaching not only as the transfer of knowledge, but also as a shared intellectual expedition. I engage with
+    students across disciplines and levels, learning and evolving together as we envision and engineer the future of our natural and built
+    environments. Together, we ground emerging technologies in the realities of how people live, move, connect, and create, transforming grand
+    challenges into pathways for progress and lasting impact.
+  </section>
 </article>

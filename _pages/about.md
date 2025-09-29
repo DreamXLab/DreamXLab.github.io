@@ -11,30 +11,34 @@ profile:
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
-recent_highlights:
-  enabled: false
-  content: "Co-lead Semiconductor × Space research thrust to advance next-generation sensors, actuators, and power systems for space applications through cutting-edge semiconductor innovation."
-  scrollable: true
+# recent_highlights:
+#   enabled: false
+#   content: "Co-lead Semiconductor × Space research thrust to advance next-generation sensors, actuators, and power systems for space applications through cutting-edge semiconductor innovation."
+#   scrollable: true
 
-AI_Explorer:
+# AI_Explorer:
+#   enabled: true
+#   content: "I conduct use-inspired, multidisciplinary research in AI and Robotics to create intelligent systems that <strong>augment</strong>, <strong>collaborate</strong> with, <strong>challenge</strong>, <strong>educate</strong>, <strong>serve</strong>, and <strong>steward</strong> (<strong>ACCESS</strong>) humanity. My goal is to advance AI to reshape how we live, work, learn, and govern, bridging research with real-world transformation."
+#   list:
+#     {
+#       "Augment": " - AI enhances human cognitive, physical, and creative abilities, empowering performance beyond natural limits.",
+#       "Collaborate": " - AI co-decides and co-acts with humans in complex, real-world tasks.",
+#       "Challenge": " - AI disrupts norms and human roles, exposing new possibilities and prompting societal evolution.",
+#       "Educate": " - AI personalizes learning and feedback, scaling training and accelerating skill growth.",
+#       "Serve": " - AI undertakes essential, dull, dirty, and dangerous tasks, enabling humans to focus on higher-value endeavors.",
+#       "Steward": " - AI governs and optimizes systems to align with human values, advancing health, safety, security, and long-term societal well-being.",
+#     }
+
+# Deep_Tech_Entrepreneur:
+#   enabled: false
+#   content: "I actively support former students and postdoctoral researchers in launching deep-tech startups. I am also deeply engaged in commercializing our research by collaborating directly with customers, industry partners, investors, and university technology transfer offices to bring our innovations to market and drive real-world impact."
+# Engineer_and_Economic_Consultant:
+#   enabled: false
+#   content: "While I devote most of my time to advancing AI and robotics, I may occasionally engage in engineering and economics consulting when opportunities align with relevance, interest, and real-world impact. I approach these engagements not only as a contributor but also as a learner, leveraging them to extract use-case intelligence and structural insights that inform both research and innovation. In engineering, I provide expertise in construction, infrastructure, and energy systems, with a particular focus on data center design, delivery, and operations. In economics, I provide expertise in capital project planning, freight and logistics strategy, digital transformation, automation and technology adoption, as well as market and policy intelligence."
+
+AI_Explorer_New:
   enabled: true
-  content: "I conduct use-inspired, multidisciplinary research in AI and Robotics to create intelligent systems that <strong>augment</strong>, <strong>collaborate</strong> with, <strong>challenge</strong>, <strong>educate</strong>, <strong>serve</strong>, and <strong>steward</strong> (<strong>ACCESS</strong>) humanity. My goal is to advance AI to reshape how we live, work, learn, and govern, bridging research with real-world transformation."
-  list:
-    {
-      "Augment": " - AI enhances human cognitive, physical, and creative abilities, empowering performance beyond natural limits.",
-      "Collaborate": " - AI co-decides and co-acts with humans in complex, real-world tasks.",
-      "Challenge": " - AI disrupts norms and human roles, exposing new possibilities and prompting societal evolution.",
-      "Educate": " - AI personalizes learning and feedback, scaling training and accelerating skill growth.",
-      "Serve": " - AI undertakes essential, dull, dirty, and dangerous tasks, enabling humans to focus on higher-value endeavors.",
-      "Steward": " - AI governs and optimizes systems to align with human values, advancing health, safety, security, and long-term societal well-being.",
-    }
-
-Deep_Tech_Entrepreneur:
-  enabled: false
-  content: "I actively support former students and postdoctoral researchers in launching deep-tech startups. I am also deeply engaged in commercializing our research by collaborating directly with customers, industry partners, investors, and university technology transfer offices to bring our innovations to market and drive real-world impact."
-Engineer_and_Economic_Consultant:
-  enabled: false
-  content: "While I devote most of my time to advancing AI and robotics, I may occasionally engage in engineering and economics consulting when opportunities align with relevance, interest, and real-world impact. I approach these engagements not only as a contributor but also as a learner, leveraging them to extract use-case intelligence and structural insights that inform both research and innovation. In engineering, I provide expertise in construction, infrastructure, and energy systems, with a particular focus on data center design, delivery, and operations. In economics, I provide expertise in capital project planning, freight and logistics strategy, digital transformation, automation and technology adoption, as well as market and policy intelligence."
+  content: AI Explorer. I am committed to advancing use-inspired innovation and translating research into real-world impact through collaboration, mentorship, and technology-driven solutions. My work focuses on multidisciplinary research in AI and robotics to create intelligent systems that augment, collaborate with, challenge, educate, serve, and steward (ACCESS) humanity. My goal is to develop AI that reshapes how we live, work, learn, and govern, bridging research with real-world transformation. Augment – AI enhances human cognitive, physical, and creative abilities, enabling performance beyond natural limits. Collaborate – AI co-decides and co-acts with humans to tackle complex, real-world tasks. Challenge – AI provokes new thinking by questioning assumptions, disrupting outdated norms, and revealing novel opportunities for societal evolution. Educate – AI personalizes learning and feedback, scaling training and accelerating skill development. Serve – AI takes on essential, dull, dirty, and dangerous tasks, freeing humans to focus on higher-value and more meaningful pursuits. Steward – AI governs and optimizes systems to align with human values, promoting health, safety, security, and long-term societal well-being.
 Educator:
   enabled: True
   content: "Engineering Educator. Civil engineering and construction is far more than it is often perceived to be “digging dirt,” “pouring concrete,” or “counting traffic.” It encompasses every dimension of what, where, and how we inhabit, sustain, and evolve life on Earth and beyond in daily life and under extreme conditions. It is a discipline fundamentally rooted in service to humanity and the advancement of civilization. As an educator, I view teaching not only as the transfer of knowledge, but also as a shared intellectual expedition. I engage with students across disciplines and levels, learning and evolving together as we envision and engineer the future of our natural and built environments. Together, we ground emerging technologies in the realities of how people live, move, connect, and create, transforming grand challenges into pathways for progress and lasting impact."
