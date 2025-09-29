@@ -79,6 +79,11 @@ ninja.data = [{
           description: "Endowing Robots with AI-Based See-Through Capabilities To Save Lives and Sense Hidden Hazards.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Seethrough_Robots/";
+            },},{id: "projects-redefine-sugery-intelligence-with-physical-ai",
+          title: 'Redefine Sugery Intelligence with Physical AI',
+          description: "A Biomimetic Soft Robotic System That Cognitively and Physically Assists Surgeons in Minimally Invasive Surgery",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/Surgery_AI/";
             },},{
         id: 'social-email',
         title: 'email',
