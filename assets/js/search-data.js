@@ -59,11 +59,6 @@ ninja.data = [{
           description: "Aerial Robotic AI Agents Provide Real-Time Post-Disaster Intelligence",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Aftermath/";
-            },},{id: "projects-flying-dna",
-          title: 'Flying DNA',
-          description: "Digital Twin + Networked System + AI (DNA) Reshape Future Air Mobility.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/Flying_DNA/";
             },},{id: "projects-building-immunology",
           title: 'Building Immunology',
           description: "AI-based Immune Systems Protect You and Your Loved Ones in Buildings.",
