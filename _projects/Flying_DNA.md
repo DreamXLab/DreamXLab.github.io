@@ -39,11 +39,10 @@ slides:
 body {
   margin:0;
   background:var(--bg) !important;  /* 黑色背景 */
-  color:var(--fg) !important;       /* 白色字体 */
   font-family: Arial, sans-serif;
 }
 
-/* Title + Description 居中 + 白色 */
+/* Title + Description 居中 */
 .page__lead,
 .page-description,
 .page-subtitle,
@@ -58,18 +57,16 @@ p.description {
   margin-right: auto !important;
   font-size: 1.8em !important;   /* description 基准字号 */
   line-height: 1.5 !important;
-  color: var(--fg) !important;   /* 白色 */
   width: 100% !important;
 }
 
 /* Title 单独放大 */
 h1 {
-  font-size: 2.4em !important;   /* 比 description 大三个字号 */
+  font-size: 3.6em !important;   /* 比 description 大三个字号 */
 }
 
 /* Publications / refs */
 .refs h2 {
-  color: var(--fg) !important;
   font-size: 1.5em !important;
   text-align: left;
 }
@@ -79,9 +76,13 @@ h1 {
   margin: 12px 0;
 }
 .refs-list li, .refs-more li {
-  color: var(--fg) !important;   /* 白色 */
   font-size: 1em;
   line-height: 1.5;
   margin: 10px 0;
+}
+
+/* 🔒 强制所有文字为白色 */
+body, body * {
+  color: #ffffff !important;
 }
 </style>
