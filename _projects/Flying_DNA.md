@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Flying DNA
-description: Flying DNA integrates Digital Twin, Networked Systems, and Artificial Intelligence to create virtual replicas, connect agents and infrastructure, and enable intelligent design and optimization
+description: Digital Twin + Networked System + AI (DNA) Reshape Future Air Mobility.
 img: /assets/img/fly/title.jpg
 importance: 1
 category: Mobility&Manipulation
@@ -16,57 +16,73 @@ slides:
 ---
 
 <!-- 遍历所有 slides -->
-
 {% for slide in page.slides.order %}
-
   <div style="margin-bottom: 2rem; text-align: center;">
     <img src="{{ slide.url }}" alt="Slide image"
          style="width: 100%; max-width: 900px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
   </div>
 {% endfor %}
 
-<!-- Publications (first 5 + button to show rest) -->
+<!-- Publications -->
 <section class="refs a-reveal" id="publications">
   <h2>Publications</h2>
 
   <ul class="refs-list">
-    <li>Liu, S., Li, S., Li, H., Li, W., & Tan, J. (2024). TEeVTOL: Balancing Energy and Time Efficiency in eVTOL Aircraft Path Planning Across City-Scale Wind Fields. arXiv preprint arXiv:2403.14877.</li>
-    <li>Liu, S., Li, W., Li, H., & Li, S. (2025). Reinforcement learning based multi-perspective motion planning of manned electric vertical take-off and landing vehicle in urban environment with wind fields. Engineering Applications of Artificial Intelligence, 149, 110392.</li>
+    <li>Liu, S., Li, S., Li, H., Li, W., & Tan, J. (2024). TEeVTOL: Balancing Energy and Time Efficiency in eVTOL Aircraft Path Planning Across City-Scale Wind Fields. <em>arXiv preprint</em> arXiv:2403.14877.</li>
+    <li>Liu, S., Li, W., Li, H., & Li, S. (2025). Reinforcement learning based multi-perspective motion planning of manned electric vertical take-off and landing vehicle in urban environment with wind fields. <em>Engineering Applications of Artificial Intelligence</em>, 149, 110392.</li>
   </ul>
-
-  <ul class="refs-more" id="refs-more" hidden>
-  </ul>
-
-  <div class="btn-row">
-    <button class="btn" id="toggle-refs" aria-expanded="false" aria-controls="refs-more">Show full list</button>
-  </div>
-
 </section>
 
 <style>
-  body {
-    background-color: #000000 !important;  /* 黑色背景 */
-  }
+:root { --fg:#fff; --bg:#000; }
 
-  /* Title (h1) */
-  h1 {
-    font-family: Arial, sans-serif !important;
-    font-size: 32px !important;
-    color: #ffffff !important;  /* 白色字体 */
-  }
+body {
+  margin:0;
+  background:var(--bg) !important;  /* 黑色背景 */
+  font-family: Arial, sans-serif;
+}
 
-  /* Description */
-  p.description {
-    font-family: Arial, sans-serif !important;
-    font-size: 24px !important;
-    color: #ffffff !important;  /* 白色字体 */
-  }
+/* Title + Description 居中 */
+.page__lead,
+.page-description,
+.page-subtitle,
+header .page__lead,
+header .page-description,
+header .page-subtitle,
+h1,
+p.description {
+  display: block !important;
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  font-size: 1.8em !important;   /* description 基准字号 */
+  line-height: 1.5 !important;
+  width: 100% !important;
+}
 
-  /* Publications / refs */
-  section.refs, 
-  section.refs h2,
-  section.refs ul,
-  section.refs li {
-    color: #ffffff !important;  /* 白色字体 */
-  }
+/* Title 单独放大 */
+h1 {
+  font-size: 3.6em !important;   /* 比 description 大三个字号 */
+}
+
+/* Publications / refs */
+.refs h2 {
+  font-size: 1.5em !important;
+  text-align: left;
+}
+.refs-list, .refs-more {
+  list-style: none !important;   /* 去掉小圆点 */
+  padding-left: 0 !important;
+  margin: 12px 0;
+}
+.refs-list li, .refs-more li {
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+/* 🔒 强制所有文字为白色 */
+body, body * {
+  color: #ffffff !important;
+}
 </style>
