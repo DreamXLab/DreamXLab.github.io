@@ -69,7 +69,7 @@ header .page-subtitle,
 p.description,
 header p {
   text-align: center !important;
-  font-size: 1.8em !important;
+  font-size: 1.6em !important;
   margin: 1rem auto !important;
   max-width: 900px !important;
   line-height: 1.5 !important;
