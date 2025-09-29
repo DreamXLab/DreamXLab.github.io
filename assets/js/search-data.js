@@ -76,7 +76,7 @@ ninja.data = [{
               window.location.href = "/projects/Infrasono/";
             },},{id: "projects-see-through-robots",
           title: 'See-Through Robots',
-          description: "Endowing Robots with AI-Based See-Through Capabilities To Save Lives and Sense Hidden Hazards",
+          description: "Endowing Robots with AI-Based See-Through Capabilities To Save Lives and Sense Hidden Hazards.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Seethrough_Robots/";
             },},{id: "projects-ai-copilot-in-surgery",
