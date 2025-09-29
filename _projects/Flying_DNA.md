@@ -42,27 +42,33 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* Title + Description 居中 */
+/* ✅ 只让正文变白，不影响导航栏 */
+main, .page, .page-wrap, section, .refs {
+  color: var(--fg) !important;
+}
+main *, .page *, .page-wrap *, section *, .refs * {
+  color: var(--fg) !important;
+}
+
+/* Title 居中 + 放大 */
+h1 {
+  display: block !important;
+  text-align: center !important;
+  font-size: 3.6em !important;   /* Title 放大 */
+  margin: 1rem auto !important;
+}
+
+/* Description 居中，白色 */
 .page__lead,
 .page-description,
-.page-subtitle,
-header .page__lead,
-header .page-description,
-header .page-subtitle,
-h1,
 p.description {
   display: block !important;
   text-align: center !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  font-size: 1.8em !important;   /* description 基准字号 */
+  font-size: 1.8em !important;   /* 小于 Title */
+  margin: 1rem auto !important;
+  max-width: 900px !important;
   line-height: 1.5 !important;
-  width: 100% !important;
-}
-
-/* Title 单独放大 */
-h1 {
-  font-size: 3.6em !important;   /* 比 description 大三个字号 */
+  color: var(--fg) !important;
 }
 
 /* Publications / refs */
@@ -79,10 +85,5 @@ h1 {
   font-size: 1em;
   line-height: 1.5;
   margin: 10px 0;
-}
-
-/* 🔒 强制所有文字为白色 */
-body, body * {
-  color: #ffffff !important;
 }
 </style>
