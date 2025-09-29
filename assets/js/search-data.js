@@ -79,11 +79,6 @@ ninja.data = [{
           description: "Endowing Robots with AI-Based See-Through Capabilities To Save Lives and Sense Hidden Hazards.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Seethrough_Robots/";
-            },},{id: "projects-ai-copilot-in-surgery",
-          title: 'AI Copilot in Surgery',
-          description: "Redefine Surgery Intelligence",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/surgical_robot_system/";
             },},{
         id: 'social-email',
         title: 'email',
