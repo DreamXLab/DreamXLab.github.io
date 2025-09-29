@@ -1,7 +1,7 @@
 ---
 layout: page
 title: See-Through Robots
-description: Endowing Robots with AI-Based See-Through Capabilities To Save Lives and Sense Hidden Hazards
+description: Endowing Robots with AI-Based See-Through Capabilities To Save Lives and Sense Hidden Hazards.
 img: /assets/img/seethrough_Robots/title.jpg
 importance: 1
 category: Mobility&Manipulation
