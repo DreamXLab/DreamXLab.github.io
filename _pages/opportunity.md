@@ -69,3 +69,12 @@ We prioritize applicants who:
   <p>We are especially supportive of motivated students who are eager to explore new ideas and develop strong skills in AI and robotics.</p>
 
 </div>
+<footer style="text-align:center; margin-top:2em; font-size:0.9em; color:#666;">
+  <div>
+    <script
+      type="text/javascript"
+      id="mapmyvisitors"
+      src="https://mapmyvisitors.com/map.js?cl=ffffff&w=300&t=n&d=Bo0VAD5sjjoytf0hjaSZjMbEbz9kF3ucYI3Fy3VoSG0"
+    ></script>
+  </div>
+</footer>
