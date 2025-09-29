@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 subtitle: Tenured Associate Professor @ <a href='https://www.ufl.edu/'>University of Florida</a>
-
+nav_order: 1
 profile:
   align: right
   image: prof_pic.png
