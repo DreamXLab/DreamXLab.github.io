@@ -42,19 +42,20 @@ Postdoc funding may be available on a competitive, case-by-case basis, depending
   <h4><strong>Ph.D. Students</strong></h4>
   <p>We are actively seeking high-caliber Ph.D. applicants from diverse engineering and computing backgrounds, including but not limited to: Electrical Engineering and Computer Science; Mechanical and Aerospace Engineering; Industrial and Systems Engineering; Civil and Coastal Engineering; Materials Science.</p>
 
-<strong>Requirements:</strong>
-
-  <ul>
-    <li>A master’s degree in a relevant field and strong research or technical background in AI, robotics, or the lab’s other core research areas.</li>
-    <li>Proven programming skills and/or hands-on robotics experience.</li>
-    <li>Publications in recognized venues are required/highly preferred for funded positions.</li>
-  </ul>
-
-<strong>Funding Policy:</strong>
+<strong>Funding Policy: </strong>
 
   <ul>
     <li>Funding is highly competitive and awarded to outstanding candidates who meet the above requirements</li>
     <li>Self-funded students with strong alignment and motivation will be considered. Future funding may be possible depending on student performance and lab resources, but is not guaranteed</li>
+  </ul>
+
+<strong>Qualifications</strong>
+We prioritize applicants who:
+
+  <ul>
+    <li>Have master’s degree and strong research/technical background in AI, robotics, or related fields.</li>
+    <li>Have proven programming skills and/or hands-on robotics experience.</li>
+    <li>Have publications in recognized venues are required/highly preferred for funded positions.</li>
   </ul>
 
   <h4><strong>Master and Undergraduate Students</strong></h4>
