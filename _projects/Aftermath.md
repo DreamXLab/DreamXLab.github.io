@@ -108,6 +108,7 @@ header .page-subtitle {
     <div class="btn-row">
       <button class="btn" id="toggle-refs" aria-expanded="false" aria-controls="refs-more">Show full list</button>
     </div>
+
   </section>
 
   <div class="footer-spacer"></div>

@@ -71,6 +71,7 @@ header .page-subtitle {
 </style>
 
 <canvas id="fx-bg" aria-hidden="true"></canvas>
+
 <div class="bg-gradient" aria-hidden="true"></div>
 
 <div class="page-wrap">
@@ -108,6 +109,7 @@ header .page-subtitle {
     <div class="btn-row">
       <button class="btn" id="toggle-refs" aria-expanded="false" aria-controls="refs-more">Show full list</button>
     </div>
+
   </section>
 
   <div class="footer-spacer"></div>

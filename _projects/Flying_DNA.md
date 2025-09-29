@@ -16,7 +16,9 @@ slides:
 ---
 
 <!-- 遍历所有 slides -->
+
 {% for slide in page.slides.order %}
+
   <div style="margin-bottom: 2rem; text-align: center;">
     <img src="{{ slide.url }}" alt="Slide image"
          style="width: 100%; max-width: 900px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
@@ -42,33 +44,46 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* Title + Description 居中 */
+/* ✅ 正文部分全部白色（不影响导航栏） */
+main, .page, .page-wrap, section, .refs {
+  color: var(--fg) !important;
+}
+main *, .page *, .page-wrap *, section *, .refs * {
+  color: var(--fg) !important;
+}
+
+/* Title 样式 */
+h1 {
+  text-align: center !important;
+  font-size: 3.6em !important;   /* 放大字号 */
+  margin: 1rem auto !important;
+  display: block !important;
+  color: var(--fg) !important;
+}
+
+/* Description 样式：通配 header 里的段落 */
 .page__lead,
 .page-description,
 .page-subtitle,
 header .page__lead,
 header .page-description,
 header .page-subtitle,
-h1,
-p.description {
-  display: block !important;
+p.description,
+header p {
   text-align: center !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  font-size: 1.8em !important;   /* description 基准字号 */
+  font-size: 1.4em !important;
+  margin: 1rem auto !important;
+  max-width: 900px !important;
   line-height: 1.5 !important;
-  width: 100% !important;
-}
-
-/* Title 单独放大 */
-h1 {
-  font-size: 3.6em !important;   /* 比 description 大三个字号 */
+  display: block !important;
+  color: var(--fg) !important;
 }
 
 /* Publications / refs */
 .refs h2 {
   font-size: 1.5em !important;
   text-align: left;
+  color: var(--fg) !important;
 }
 .refs-list, .refs-more {
   list-style: none !important;   /* 去掉小圆点 */
@@ -79,10 +94,6 @@ h1 {
   font-size: 1em;
   line-height: 1.5;
   margin: 10px 0;
-}
-
-/* 🔒 强制所有文字为白色 */
-body, body * {
-  color: #ffffff !important;
+  color: var(--fg) !important;
 }
 </style>

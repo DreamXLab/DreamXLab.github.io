@@ -4,10 +4,9 @@ permalink: /opportunity/
 title: Opportunity
 description:
 nav: true
-nav_order: 6
+nav_order: 4
 ---
 
-<!-- 去除所有 ul 默认缩进 -->
 <style>
   .opportunity-page ul {
     margin-left: 0;
@@ -29,10 +28,11 @@ nav_order: 6
   <h4><strong>Postdoctoral Researchers:</strong></h4>
   <p>We occasionally have openings for postdoctoral researchers with outstanding academic records and a strong alignment with our lab’s mission.</p>
 
-  <p><strong>Funding Availability and Work Eligibility</strong></p>
-  Postdoc funding may be available on a competitive, case-by-case basis, depending on alignment with active or upcoming projects. Before applying, please verify your eligibility to work in the U.S. and in the State of Florida. Inquiries without this verification will not be considered. If eligible and interested, please email us with: (1) your CV; and (2) a concise, well-articulated statement explaining how your track record and future research vision align with the core focus areas of our lab.
+<strong>Funding Availability and Work Eligibility</strong>
+Postdoc funding may be available on a competitive, case-by-case basis, depending on alignment with active or upcoming projects. Before applying, please verify your eligibility to work in the U.S. and in the State of Florida. Inquiries without this verification will not be considered. If eligible and interested, please email us with: (1) your CV; and (2) a concise, well-articulated statement explaining how your track record and future research vision align with the core focus areas of our lab.
 
-  <p><strong>Qualifications</strong></p>
+  <br>
+  <strong>Qualifications</strong>
   We prioritize applicants who:
   <ul>
     <li>Have a strong publication record in top-tier venues in AI and robotics.</li>
@@ -42,14 +42,16 @@ nav_order: 6
   <h4><strong>Ph.D. Students</strong></h4>
   <p>We are actively seeking high-caliber Ph.D. applicants from diverse engineering and computing backgrounds, including but not limited to: Electrical Engineering and Computer Science; Mechanical and Aerospace Engineering; Industrial and Systems Engineering; Civil and Coastal Engineering; Materials Science.</p>
 
-  <p><strong>Requirements:</strong></p>
+<strong>Requirements:</strong>
+
   <ul>
     <li>A master’s degree in a relevant field and strong research or technical background in AI, robotics, or the lab’s other core research areas.</li>
     <li>Proven programming skills and/or hands-on robotics experience.</li>
     <li>Publications in recognized venues are required/highly preferred for funded positions.</li>
   </ul>
 
-  <p><strong>Funding Policy:</strong></p>
+<strong>Funding Policy:</strong>
+
   <ul>
     <li>Funding is highly competitive and awarded to outstanding candidates who meet the above requirements</li>
     <li>Self-funded students with strong alignment and motivation will be considered. Future funding may be possible depending on student performance and lab resources, but is not guaranteed</li>

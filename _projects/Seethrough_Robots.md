@@ -12,7 +12,9 @@ slides:
 ---
 
 <!-- 遍历所有 slides -->
+
 {% for slide in page.slides.order %}
+
   <div style="margin-bottom: 2rem; text-align: center;">
     <img src="{{ slide.url }}" alt="Slide image"
          style="width: 100%; max-width: 900px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
@@ -29,7 +31,6 @@ slides:
 
   <ul class="refs-more" id="refs-more" hidden>
   </ul>
-
 </section>
 
 <style>
@@ -42,28 +43,39 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* Title + Description 居中 + 放大字号 */
+/* ✅ Title 居中 + 放大 */
+h1 {
+  display: block !important;
+  text-align: center !important;
+  font-size: 3.6em !important;   /* 放大字号 */
+  margin: 1rem auto !important;
+  color: var(--fg) !important;
+}
+
+/* ✅ Description 居中，兼容所有常见 class */
 .page__lead,
 .page-description,
 .page-subtitle,
 header .page__lead,
 header .page-description,
 header .page-subtitle,
-h1,
-p.description {
-  display: block !important;
+p.description,
+header.page__header p {
   text-align: center !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  font-size: 1.8em !important;  /* Description 基准大小 */
+  font-size: 1.6em !important;   /* 比 h1 小一号 */
+  margin: 1rem auto !important;
+  max-width: 900px !important;
   line-height: 1.5 !important;
+  display: block !important;
   color: var(--fg) !important;
-  width: 100% !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
-/* Title 单独放大 */
-h1 {
-  font-size: 3.6em !important;  /* 比 description 大三个字号 */
+/* ✅ 如果 header 是 flex，强制覆盖 */
+header.page__header {
+  display: block !important;
+  text-align: center !important;
 }
 
 /* Publications / refs */
@@ -73,7 +85,7 @@ h1 {
   text-align: left;
 }
 .refs-list, .refs-more {
-  list-style: none !important;
+  list-style: none !important;   /* 去掉小圆点 */
   padding-left: 0 !important;
   margin: 12px 0;
 }
@@ -84,4 +96,3 @@ h1 {
   margin: 10px 0;
 }
 </style>
-

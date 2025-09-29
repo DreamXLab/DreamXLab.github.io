@@ -4,7 +4,7 @@ permalink: /facility/
 title: Facility
 description:
 nav: true
-nav_order: 9
+nav_order: 5
 ---
 
 <style>
@@ -64,52 +64,51 @@ nav_order: 9
 
   <div class="assets-grid">
     <div class="asset-card">
-      <img src="/assets/img/robot.png" alt="Robotic Arm">
-      <h3>Robotic Arms</h3>
-      <p>High-precision manipulators for testing advanced control algorithms and automation workflows.</p>
+      <img src="/assets/img/facilities/robot_arm.png" alt="Robotic Arm">
+      <h3>Robotic Arms & Mobile Platforms</h3>
+      <p>High-precision manipulators and mobile bases for testing advanced control algorithms, autonomous navigation, and robotic workflows.</p>
     </div>
 
     <div class="asset-card">
-      <img src="/assets/img/facilities/hipergator.jpg"  alt="Compute Cards">
+      <img src="/assets/img/facilities/hipergator.jpg" alt="Compute Cards">
       <h3>High-Performance Compute Cards</h3>
-      <p>Latest GPUs and edge inference modules for training and deploying large-scale AI models.</p>
+      <p>State-of-the-art GPUs and edge inference modules for training and deploying large-scale AI and robotics models.</p>
     </div>
 
     <div class="asset-card">
-      <img src="/assets/img/robot.png"  alt="Eye-Tracking System">
-      <h3>Eye-Tracking Systems</h3>
-      <p>Precision gaze and pupilometry devices for studying visual attention and human factors.</p>
+      <img src="/assets/img/facilities/robot_dog.png" alt="Robot Dog">
+      <h3>Robot Dog</h3>
+      <p>Bipedal platform designed for locomotion research, balance control, and advanced human–robot interaction experiments.</p>
     </div>
 
     <div class="asset-card">
-      <img src="/assets/img/robot.png"  alt="VR Equipment">
+      <img src="/assets/img/facilities/quest3.png" alt="VR Equipment">
       <h3>VR & AR Equipment</h3>
-      <p>Immersive headsets and motion controllers for mixed-reality experiments and simulations.</p>
+      <p>Immersive head-mounted displays and motion controllers for mixed-reality simulations and interactive experiments.</p>
     </div>
 
     <div class="asset-card">
-      <img src="/assets/img/robot.png"  alt="Motion Capture">
+      <img src="/assets/img/facilities/motion_capture.png" alt="Motion Capture">
       <h3>Motion Capture Suite</h3>
-      <p>Full-body tracking cameras and markers for biomechanical analysis and human–robot interaction.</p>
+      <p>Full-body tracking system with high-speed cameras and markers for biomechanics, ergonomics, and human–robot collaboration research.</p>
     </div>
 
     <div class="asset-card">
-      <img src="/assets/img/robot.png"  alt="Sensor Suite">
-      <h3>Sensor Arrays & LIDAR</h3>
-      <p>Multi-modal sensors, LIDAR, and depth cameras for environmental perception and mapping.</p>
+      <img src="/assets/img/facilities/LiDAR.jpg" alt="Sensor Suite">
+      <h3>Sensor Arrays & LiDAR</h3>
+      <p>Multi-modal perception suite including LiDAR, depth cameras, and environmental sensors for mapping and autonomous navigation.</p>
     </div>
 
     <div class="asset-card">
-      <img src="/assets/img/robot.png"  alt="Embedded Devices">
+      <img src="/assets/img/facilities/jetson.png" alt="Embedded Devices">
       <h3>Embedded & IoT Devices</h3>
-      <p>Microcontrollers, FPGAs, and IoT kits for prototyping embedded robotic systems.</p>
+      <p>Microcontrollers, FPGAs, and IoT development kits for prototyping embedded systems and intelligent robotic applications.</p>
     </div>
 
     <div class="asset-card">
-      <img src="/assets/img/robot.png"  alt="3D Printer">
+      <img src="/assets/img/facilities/3d_printing.png" alt="3D Printer">
       <h3>3D Printing & Fabrication</h3>
-      <p>Rapid prototyping tools for custom robotics components and laboratory fixtures.</p>
+      <p>Rapid prototyping and fabrication tools for custom robotics components, enclosures, and experimental hardware.</p>
     </div>
 
-  </div>
 </div>

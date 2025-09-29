@@ -4,7 +4,7 @@ permalink: /team/
 title: Team
 description: members of the DreamXLab
 nav: true
-nav_order: 7
+nav_order: 3
 
 profiles:
   - image: /assets/img/profiles_pics/prof_pic.png
