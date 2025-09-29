@@ -16,9 +16,7 @@ slides:
 ---
 
 <!-- 遍历所有 slides -->
-
 {% for slide in page.slides.order %}
-
   <div style="margin-bottom: 2rem; text-align: center;">
     <img src="{{ slide.url }}" alt="Slide image"
          style="width: 100%; max-width: 900px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
@@ -40,7 +38,6 @@ slides:
   <div class="btn-row">
     <button class="btn" id="toggle-refs" aria-expanded="false" aria-controls="refs-more">Show full list</button>
   </div>
-
 </section>
 
 <style>
@@ -53,7 +50,7 @@ slides:
     font-family: Arial, sans-serif !important;
     font-size: 32px !important;
     color: #ffffff !important;  /* 白色字体 */
-    text-align: center;         /* 标题居中 */
+    text-align: center !important; /* 居中 */
   }
 
   /* Description */
@@ -61,7 +58,7 @@ slides:
     font-family: Arial, sans-serif !important;
     font-size: 24px !important;
     color: #ffffff !important;  /* 白色字体 */
-    text-align: center;         /* 居中 */
+    text-align: center !important; /* 居中 */
     margin: 1rem auto;          /* 上下留白，自动左右居中 */
     max-width: 900px;           /* 限制宽度，避免太长一行 */
   }
