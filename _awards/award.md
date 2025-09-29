@@ -12,42 +12,42 @@ awards:
     institution: "University of Tennessee Knoxville"
     year: 2024
     description: >
-      The recipients were selected through a highly competitive and rigorous evaluation process. This award is designed to strengthen the entrepreneurial ecosystem by supporting faculty in transforming their innovative research into commercially viable technologies, fostering a seamless pathway from discovery to market impact.
-  - title: "Second Place in Best Data Award Competition"
+      This award is presented to recognize outstanding faculty who transform innovative research into commercially viable technologies, fostering a seamless pathway from discovery to market impact.
+  - title: "Best Data Award Competition Second Place"
     institution: "American Society of Civil Engineers"
     year: 2024
     description: >
-      This award is presented to the "Hospital Indoor Object Detection (HIOD) Dataset" for the Best Data Award Competition, hosted by the American Society of Civil Engineers. With 4,417 meticulously curated images and 51,809 precise annotations across 56 object categories, this dataset significantly enhances machine learning applications in healthcare, offering a critical resource for advancing object detection in hospital environments.
+      This award is presented to the "Hospital Indoor Object Detection (HIOD) Dataset" for the Best Data Award Competition, hosted by the American Society of Civil Engineers. With 4,417 meticulously curated images and 51,809 precise annotations across 56 object categories, this dataset offers a critical resource for advancing object detection in hospital environments.
   - title: "Chancellor’s Professional Promise Award"
     institution: "University of Tennessee Knoxville"
     year: 2023
     description: >
-      This award honors faculty members at the University of Tennessee Knoxville who are early in their careers for excellence in research, scholarship, and creative achievement.
+      This award honors faculty who strives for and has achieved excellence in research, scholarship, and creative achievement.
   - title: "David Goodpasture Award"
     institution: "University of Tennessee Knoxville"
     year: 2022
     description: >
-      This endowed award is given for a period of four years to recognize research and teaching accomplishments of a faculty member in the Department of Civil and Environmental Engineering at the University of Tennessee Knoxville.
+      This endowed professorship and award is granted for a four-year term to recognize outstanding achievements in both research and teaching in Civil and Environmental Engineering.
   - title: "Professional Promise in Research Award"
     institution: "University of Tennessee Knoxville"
     year: 2021
     description: >
-      This award recognizes the faculty members in the Tickle College of Engineering at the University of Tennessee Knoxville who have received national and international recognition in their fields and show professional promise in research excellence.
+      This award recognizes the faculty in the Tickle College of Engineering who have received national and international recognition in their fields and demonstrate strong professional promise in research excellence.
   - title: "Success in Multidisciplinary Research Award"
     institution: "University of Tennessee Knoxville"
     year: 2021
     description: >
-      This award recognizes a team of faculty members from multiple disciplines at the University of Tennessee Knoxville working synergistically and have successfully secured major external resources and obtained recognition for their convergence research.
+      This Chancellor’s award recognizes faculty who have successfully secured major external funding and earned recognition for their contributions to multidisciplinary research.
   - title: "Best Paper Award, Building and Environment"
     institution: "Journal of Building and Environment"
     year: 2020
     description: >
-      This award recognizes a significant contribution to the state of the art that was selected from 4,000 papers submitted to the Journal of Building and Environment through four tiers of evaluation. The award was presented for the paper “Segmenting Areas of Potential Contamination for Adaptive Robotic Disinfection in Built Environments” (Shuai Li is the corresponding author).
+      This award recognizes a significant contribution to the state of the art that was selected from 4000 papers submitted to the Journal of Building and Environment through four tiers of evaluation. The award was presented for the paper “Segmenting Areas of Potential Contamination for Adaptive Robotic Disinfection in Built Environments” (Shuai Li is the corresponding author).
   - title: "Collingwood Prize"
     institution: "American Society of Civil Engineers"
     year: 2018
     description: >
-      The Collingwood Prize was instituted and endowed in 1984 by Francis Collingwood, past Secretary of the American Society of Civil Engineers (ASCE). This award recognizes major contributions to knowledge in the field of civil engineering through a published paper in an ASCE journal. The award was presented for the paper “Integrating Natural Language Processing and Spatial Reasoning for Utility Compliance Checking” (Shuai Li is the first author).
+      The Collingwood Prize was instituted and endowed in 1984 by Francis Collingwood, past Secretary of American Society of Civil Engineers (ASCE). This award recognizes major contributions to knowledge in the field of civil engineering through a published paper in an ASCE journal. The award was presented for the paper “Integrating Natural Language Processing and Spatial Reasoning for Utility Compliance Checking” (Shuai Li is the first author).
   - title: "Outstanding Reviewer, Computing in Civil Engineering"
     institution: "Journal of Computing in Civil Engineering"
     year: 2017
@@ -71,76 +71,78 @@ awards:
 ---
 
 <style>
-
   .awards-container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 2rem auto;
     padding: 0 1rem;
     font-family: Georgia, serif;
-    line-height: 1.5;
+    line-height: 1.6;
     color: #222;
   }
 
+  /* 单条奖项 */
+  .award { padding: 0.75rem 0; }
 
-  .award-header {
-    display: flex;
-    justify-content: space-between;
+  /* 头部三列：左标题｜右机构｜最右年份 */
+  .award-row {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    column-gap: 1rem;
     align-items: baseline;
-    gap: 1rem;
   }
-
-
-  .award-header > div {
-    white-space: nowrap;
-  }
-
 
   .award-title {
-    font-weight: bold;
-    font-size: 1.5rem; 
-    flex: 1 1 auto;  
+    font-weight: 600;
+    font-size: 1rem;
   }
-
 
   .award-institution {
     font-style: italic;
-    font-size: 0.9rem;
-    flex: 0 0 auto;
-    text-align:right;
+    font-size: 0.95rem;
+    justify-self: end;
+    white-space: nowrap;
+    text-align: right;
   }
 
   .award-year {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    justify-self: end;
+    white-space: nowrap;
     text-align: right;
-    flex: 0 0 auto;
   }
 
-  .award-description {
-    margin-top: 0.5rem;
-    /* text-indent: 1em; */
+  .award-description { margin-top: 0.5rem; }
+
+  /* 分隔线更轻一些 */
+  .award-divider {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 0.75rem 0 0;
+  }
+
+  /* 小屏改为纵向堆叠 */
+  @media (max-width: 640px) {
+    .award-row {
+      grid-template-columns: 1fr;
+      row-gap: 0.25rem;
+    }
+    .award-institution, .award-year {
+      justify-self: start;
+      text-align: left;
+    }
   }
 </style>
 
-{% raw %}<hr>{% endraw %}
-
 <div class="awards-container">
-
-{% for award in page.awards %}
-
+  {% for award in page.awards %}
     <div class="award">
-    <div style="height:1em"></div>
-      <div class="award-header">
+      <div class="award-row">
         <div class="award-title">{{ award.title }}</div>
-      </div>
-      <div>
         <div class="award-institution">{{ award.institution }}</div>
         <div class="award-year">{{ award.year }}</div>
       </div>
       <p class="award-description">{{ award.description }}</p>
-      <div style="height:1em"></div>
-      {% raw %}<hr>{% endraw %}
+      <hr class="award-divider">
     </div>
-
-{% endfor %}
-
+  {% endfor %}
 </div>
