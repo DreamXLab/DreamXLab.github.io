@@ -63,7 +63,7 @@ p.description {
 
 /* Title 单独放大 */
 h1 {
-  font-size: 3.0em !important;  /* 比 description 大三个字号 */
+  font-size: 3.6em !important;  /* 比 description 大三个字号 */
 }
 
 /* Publications / refs */
