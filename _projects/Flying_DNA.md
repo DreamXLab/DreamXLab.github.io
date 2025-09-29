@@ -42,7 +42,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* ✅ 正文主体（不含导航栏）设为白色 */
+/* ✅ 正文部分全部白色（不影响导航栏） */
 main, .page, .page-wrap, section, .refs {
   color: var(--fg) !important;
 }
@@ -50,19 +50,24 @@ main *, .page *, .page-wrap *, section *, .refs * {
   color: var(--fg) !important;
 }
 
-/* Title 强制白色 + 居中 + 放大 */
+/* Title 样式 */
 h1 {
   text-align: center !important;
-  font-size: 3.6em !important;
+  font-size: 3.6em !important;   /* 放大字号 */
   margin: 1rem auto !important;
   display: block !important;
   color: var(--fg) !important;
 }
 
-/* Description 强制白色 + 居中 */
+/* Description 样式：通配 header 里的段落 */
 .page__lead,
 .page-description,
-p.description {
+.page-subtitle,
+header .page__lead,
+header .page-description,
+header .page-subtitle,
+p.description,
+header p {
   text-align: center !important;
   font-size: 1.8em !important;
   margin: 1rem auto !important;
@@ -89,5 +94,4 @@ p.description {
   margin: 10px 0;
   color: var(--fg) !important;
 }
-
 </style>
