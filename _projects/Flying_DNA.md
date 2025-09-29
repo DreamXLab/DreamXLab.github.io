@@ -53,6 +53,7 @@ slides:
     font-family: Arial, sans-serif !important;
     font-size: 32px !important;
     color: #ffffff !important;  /* 白色字体 */
+    text-align: center;         /* 标题居中 */
   }
 
   /* Description */
@@ -60,6 +61,9 @@ slides:
     font-family: Arial, sans-serif !important;
     font-size: 24px !important;
     color: #ffffff !important;  /* 白色字体 */
+    text-align: center;         /* 居中 */
+    margin: 1rem auto;          /* 上下留白，自动左右居中 */
+    max-width: 900px;           /* 限制宽度，避免太长一行 */
   }
 
   /* Publications / refs */
@@ -73,7 +77,7 @@ slides:
   /* 去掉引用的 bullet point */
   section.refs ul {
     list-style-type: none;   /* 去掉小圆点 */
-    padding-left: 0;         /* 去掉左边缩进 */
-    margin-left: 0;          /* 去掉额外空白 */
+    padding-left: 0;         
+    margin-left: 0;          
   }
 </style>
