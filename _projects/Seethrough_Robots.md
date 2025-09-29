@@ -30,9 +30,6 @@ slides:
   <ul class="refs-more" id="refs-more" hidden>
   </ul>
 
-  <div class="btn-row">
-    <button class="btn" id="toggle-refs" aria-expanded="false" aria-controls="refs-more">Show full list</button>
-  </div>
 </section>
 
 <style>
@@ -66,7 +63,7 @@ p.description {
 
 /* Title 单独放大 */
 h1 {
-  font-size: 2.4em !important;  /* 比 description 大三个字号 */
+  font-size: 3.0em !important;  /* 比 description 大三个字号 */
 }
 
 /* Publications / refs */
