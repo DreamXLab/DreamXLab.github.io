@@ -16,12 +16,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "nav-engagement",
-          title: "Engagement",
-          description: "",
+        },{id: "nav-team",
+          title: "Team",
+          description: "members of the DreamXLab",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/engagement/";
+            window.location.href = "/team/";
           },
         },{id: "nav-opportunity",
           title: "Opportunity",
@@ -30,19 +30,19 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/opportunity/";
           },
-        },{id: "nav-team",
-          title: "Team",
-          description: "members of the DreamXLab",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/team/";
-          },
         },{id: "nav-facility",
           title: "Facility",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/facility/";
+          },
+        },{id: "nav-engagement",
+          title: "Engagement",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/engagement/";
           },
         },{id: "awards-awards-and-honors",
           title: 'Awards and Honors',
