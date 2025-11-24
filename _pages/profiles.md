@@ -47,8 +47,8 @@ profiles:
       An AI researcher with a strong background in software engineering, his research interets include: 1. Vision–Language–Action (VLA) Models for Long-Horizon Action Planning and Autonomous Navigation. 2. 3D Computer Vision for Scene Reconstruction and Understanding
   - image: /assets/img/profiles_pics/Dingyuan_pic.png
     image_circular: false
-    url:
-    role: master
+    url: https://dingyuanhuang.github.io/
+    role: phd
     name: Dingyuan Huang
     description: Dingyuan Huang is currently a master’s student in the Department of Electrical and Computer Engineering at the University of Florida. He obtained his bachelor's degree in Intelligent Manufacturing from Central South University, China. His research interests include Reinforcement Learning, Smart Manufacturing, Space Construction and AI agent.
   - image: /assets/img/profiles_pics/Jinghao_pic.jpg
