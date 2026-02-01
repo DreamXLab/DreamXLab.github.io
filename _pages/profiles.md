@@ -16,7 +16,7 @@ profiles:
 
   - image: /assets/img/profiles_pics/Mengjun_pic.jpg
     image_circular: false
-    url: https://volweb2.utk.edu/~mwang43/
+    url: https://wangmmstar.github.io/
     role: phd
     name: Mengjun Wang
     description: |
